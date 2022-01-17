@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <style>
+      
+        #container{
+            /* border: 2px solid red; */
+            height: 729px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+        }
+        #navbar{
+           border-top: 1px solid gray;
+           border-bottom: 1px solid gray;
+            padding: 5px;
+            background-color: whitesmoke;
+        }
+        #top{
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+        }
+        img{
+           height: 40px;
+        }
+        #other{
+            display: flex;
+            justify-content: space-around;
+        }
+        #search{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+          padding: 2px;
+        }
+        input{
+            width: 50%;
+        }
+        #main{
+            /* border: 2px solid red; */
+            height: 90%;
+            display: grid;
+            grid-template-columns: 70%  30%;
+            padding: 1% 6% 0% 6%;
+            grid-gap: 20px;
+        }
+        #video{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            /* border: 2px solid rgb(51, 255, 0); */
+            height: 100%;
+            width: 100%;
+           
+            
+           
+            
+        }
+        #recomended{
+            /* border: 2px solid rgb(17, 0, 255); */
+            
+            overflow-y: scroll;
+            display: flex;
+            flex-flow: column;
+            row-gap: 20px;
+        }
+        #recomended>div{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+           
+            background-color: rgb(243, 243, 243);
+        }
+        #recomended>div:hover{
+            cursor: pointer;
+            background-color:rgb(235, 229, 229) ;
+        }
+        #recomended>div>img{
+            width: 100px;
+            height: 80px
+            
+
+        }
+        #title{
+           padding-left: 10px;
+        }
+        #acount{
+            border-radius: 50%;
+        }
+        iframe{
+            border-radius: 6px;
+            border: black;
+        }
+        h3{
+          
+        }
+
+        @media screen and (min-device-width: 0px) and (max-device-width: 480px){
+        body{
+            margin: 0px;
+        }
+            #navbar{
+             position: fixed;
+             width: 100%;
+             padding: 0px;
+         }
+         #top{
+            width: 100%;
+            /* border: 2px solid red; */
+            height: 26px;
+            display: flex;
+            padding: 0px;
+            justify-content: space-around;
+        }
+        #search{
+          width: 47%;
+          padding: 0%;
+          margin-top: 0px;
+          height: 26px;
+      }
+      
+       #logo>img{
+       height: 26px;
+       width: 80px;
+        
+        }
+        #other{
+            width: 60%;
+        }
+        #other>img{
+          height: 26px;
+      }
+            #main{
+                display: flex;
+                flex-flow: column;
+                height: auto;
+                padding: 0px;
+                
+            }
+            #recomended{
+                overflow: visible;
+                margin-top: 320px;
+               
+              
+            
+            }
+            #video{
+             position:fixed;
+                height: 270px;
+                /* border: 2px solid red; */
+                overflow: visible;
+                width: 100%;
+                margin-top: 28px;
+                background-color: white;
+                border-radius: 3px;
+            }
+            #top{
+                display: flex;
+            }
+            iframe{
+            border-radius: 6px;
+            border: black;
+            height: 65%;
+            border-radius: 0px;
+        }
+        #but{
+          width: 35px;
+          font-size: 10px;
+          padding: 0%;
+          height: 26px;
+      }
+        #title{
+           padding-left: 10px;
+           font-size: 15px;
+          
+        }
+        #recomended>div{
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            gap: 10px;
+            height: auto;
+           
+           
+        }
+        #recomended>div>img{
+            width: 100%;
+            height:200px ;
+        } #recomended>div>p{
+            margin-left: 10px;
+            font-weight: bolder;
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+        #any{
+            width: 100px;
+           
+        }
+            
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="navbar">
+        <div id="top">
+            <div id="logo">
+                <img id="menu" src="https://cdn2.iconfinder.com/data/icons/e-commerce-line-4-1/1024/menu4-256.png" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAYWbUQBcjuR97EV-eZ4XuPQ0wLM4ihzM5XHJ11IOqPvFxtYA6F-Dbj1Pa8STzAt1gQ&usqp=CAU" alt="">
+            </div>
+            <div id="search">  
+               
+                <input type="text" id="any" >
+                <button id="but" onclick="play()"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-search-256.png" style="width: 20px; height: 20px;"></button>
+                <img src="https://cdn2.iconfinder.com/data/icons/social-productivity-line-art-2/128/speaker-256.png" alt="">
+                  </div>
+
+                <div id="other">
+                    <img src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_video_call_48px-512.png" alt="">
+                    <img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-83-512.png" >
+                    <img src="https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/bell-256.png" alt="">
+                   <img onclick="login()" id="acount" src="https://cdn4.iconfinder.com/data/icons/utilities-part-3/64/man-256.png" alt="">
+              <img  id="acount" src="https://ca.slack-edge.com/T02ENN9T1FE-U02GYEU7THV-e1d3e4d4c0a7-512" alt="">
+            </div>
+          
+        </div>
+    </div>
+    <div id="container">
+        
+        <div id="main">
+            <div id="video">
+
+            
+
+            </div>
+            <div id="recomended"></div>
+            </div>
+          
+        </div>
+       
+       
+    </div>
+</body>
+</html>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let data=JSON.parse(localStorage.getItem("one_video"))
+console.log(data)
+let videoId=data.id.videoId
+console.log(videoId)
+let snippet=data.snippet
+
+let ifram=document.createElement("iframe")
+ifram.src=`https://www.youtube.com/embed/${videoId}`
+ifram.width="100%"
+ifram.height="88%"
+ifram.setAttribute("allowfullscreen","true")
+
+
+let title_div=document.createElement("div")
+title_div.setAttribute("id","title")
+let title=document.createElement("h3")
+title.textContent=snippet.title
+title_div.append(title)
+document.querySelector("#video").append(ifram,title_div)
+
+
+let all=JSON.parse(localStorage.getItem("main"))
+console.log(all)
+display()
+
+function display(){
+    console.log(all)
+    all.map((ele) =>{
+   let div=document.createElement("div")
+   let title=document.createElement("p")
+   let img=document.createElement("img")
+    title.textContent=ele.snippet.title
+    img.src=ele.snippet.thumbnails.high.url
+    div.append(img,title)
+    div.addEventListener("click",function(){
+        let history1=JSON.parse(localStorage.getItem("history")) ||[]
+           history1.push(ele)
+           localStorage.setItem("history",JSON.stringify(history1))
+        localStorage.setItem("one_video",JSON.stringify(ele))
+    window.location.href="video.html"
+    })
+
+    document.querySelector("#recomended").append(div)
+   
+
+
+    })
+}
+
+
+
+
+
+let show= document.querySelector("#result")
+const api_key="AIzaSyDhInTF157ovZl6iPhTIej5bCAWs6hhRv4"
+
+    async function play(){
+       
+        let video=document.querySelector("#any").value
+        try{
+            let response=await fetch(
+                `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${video}&type=video&key=${api_key}&maxResults=50&videoType=any`
+            )
+            let data=await response.json()
+            console.log(data.items)
+           
+            let main=data.items
+            localStorage.setItem("main",JSON.stringify(main))
+            
+        }catch(error){
+           
+        }
+
+        window.location.href="youtube.html"
+    }
+
+
+</script>
