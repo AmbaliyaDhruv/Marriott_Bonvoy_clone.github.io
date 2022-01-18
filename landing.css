@@ -3,11 +3,14 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     color: rgb(0, 0, 0);
+    background-color: whitesmoke
     
 }
+
 #navbar{
     /* border: 2px solid black; */
-    position: fixed;
+    position:fixed;
+    z-index: 1;
     width: 100%;
     height: 120px;
     border-top:5px solid black;
@@ -52,6 +55,11 @@ body{
     font-weight:900;
 }
 
+.category>div:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
 .info>div{
    display: flex;
    font-size: 14px;
@@ -63,11 +71,11 @@ body{
 
 #findbox{
     border: 2px solid whitesmoke;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    width: 75%;
+    box-shadow: rgba(94, 94, 94, 0.45) 0px 25px 20px -20px;
+    width: 77%;
     margin: auto;
     height: 120px;
-    margin-left:13%;
+    margin-left:11.5%;
     margin-top: -80px;
     position: absolute;
     background-color: white;
@@ -147,6 +155,7 @@ z-index: 20px;
 
 #HotelsSubmit:hover{
     background-color: #53505f;
+    cursor: pointer;
 }
 
 
@@ -157,6 +166,153 @@ z-index: 20px;
 
 #mainImageBox{
     /* border: 2px solid black; */
-   
+   background-color: white;
     height:657px ;
 }
+
+#Peace{
+    margin: auto;
+    border: 2px solid transparent;
+    width: 30%;
+    font-size: 23px;
+    text-align: center;
+    font-weight:bolder;
+    margin-top: 22px;
+}
+
+#BestRate{
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    gap: 10px;
+    width: 74%;
+    margin: auto;
+    
+
+}
+#BestRate>div{
+       width: 25%;
+       /* border: 2px solid red; */
+       display: flex;
+       height: 35px;
+}
+
+#BestRate>div>label{
+     margin-top: 5px;
+     margin-left:10px;
+     font-size: 17px;
+     font-weight: 500;
+     color: #80340e;
+}
+
+#BestRate>div>label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#check{
+    height: 700px;
+}
+
+#innersignin{
+    width: 77.3%;
+    border: 2px solid transparent;
+    margin: auto;
+    margin-top:50px;
+    height: 375px;
+    background-color:#1c1c1c;
+}
+
+.secondlogo{
+    
+    width:15%;
+    height: 60px;
+    margin: auto;
+    margin-top:45px;
+}
+
+.sigininner{
+    display: flex;
+    gap: 20px;
+    /* border: 2px solid white; */
+    
+    width: 90%;
+    margin: auto;
+    margin-top:25px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#Emailinput{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#passwordinput{
+    width: 100%;
+    height: 50px; 
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#signinbut{
+    width: 100%;
+    height: 50px; 
+    margin-top: 22px;
+    background-color:white;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    color:black;
+}
+
+#signinbut:hover{
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+
+.Emailinput{
+    width: 30%;
+    color: white;
+    margin-left:3%;
+}
+
+.Passwordinput{
+    width: 40%;
+    color: white;
+}
+
+.signinbut{
+    width: 20%;
+    color: white;
+}
+
+.Note{
+    border: 2px solid transparent;
+    width: 84%;
+    margin: auto;
+    color: white;
+    margin-top: 25px;
+}
+
+.checkbox{
+    margin-top: 20px;
+   
+}
+
+.Note2{
+    border: 2px solid transparent;
+    width: 84%;
+    margin: auto;
+    color: white;
+    margin-top:40px;
+    display: flex;
+    font-size:13px;
+}
+
+.Note2>div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+

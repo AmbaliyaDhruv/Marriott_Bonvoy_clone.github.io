@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Noto+Sans&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Noto+Sans&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
     <title>Landing Page</title>
     <link rel="stylesheet" href="landing.css">
 </head>
+
 <body>
     <!-- main box of navbar -->
+
     <div id="navbar">
 
         <!-- logo box -->
         <div class="logo">
-            <img src="logo.png"
-            width="100%" height="100%" alt="">
+            <img src="logo.png" width="100%" height="100%" alt="">
         </div>
         <!-- catagory box -->
         <div class="category">
@@ -33,43 +37,102 @@
             <div><img src="1st.png" alt="" width="50%" height="100%">English</div>
             <div><img src="2nd.png" alt="" width="50%" height="100%"> Help</div>
             <div><img src="3rd.png" alt="" width="50%" height="100%"> MyTrips</div>
-            
+
             <div></div>
         </div>
     </div>
-     <!-- button and heading top on the image & image data -->
-<div id="mainImageBox">
-    <div id="btuimg">
-        <img src="https://cache.marriott.com/marriottassets/marriott/BDQCC/bdqcc-exterior-5133-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1180px:*" width="100%" height="610px" alt="" class="btuing">
-        <div class="explore">
-            EXPLORE OUR BRANDS
-        </div>
-        <button class="ExMore">LEARN MORE</button>
-    </div>
-<!-- Find Hotels section -->
-    <div id="findbox">
-        <div class="findinner">
-            <div class="destination">
-                Destination
-                <br>
-                <input type="text" placeholder="city,airport,attraction or address" id="HotelNameinput">
-            </div>
-            <div class="dates">
-                Dates
-                <br>
-                <input type="text" id="Datesinput">
 
+    <!-- button and heading top on the image & image data -->
+    <div id="mainImageBox">
+        <div id="btuimg">
+            <img src="https://cache.marriott.com/marriottassets/marriott/BDQCC/bdqcc-exterior-5133-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1180px:*"
+                width="100%" height="610px" alt="" class="btuing">
+            <div class="explore">
+                EXPLORE OUR BRANDS
             </div>
-            <div class="findHotels">
-                <button id="HotelsSubmit">FIND HOTELS</button>
+            <button class="ExMore">LEARN MORE</button>
+        </div>
+        <!-- Find Hotels section -->
+        <div id="findbox">
+            <div class="findinner">
+                <div class="destination">
+                    Destination
+                    <br>
+                    <input type="text" placeholder="city,airport,attraction or address" id="HotelNameinput">
+                </div>
+                <div class="dates">
+                    Dates
+                    <br>
+                    <input type="text" id="Datesinput">
+
+                </div>
+                <div class="findHotels">
+                    <button id="HotelsSubmit">FIND HOTELS</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Travel with Peace of mind -->
+
+    <div id="Peace">
+        <h2>Travel with Peace of Mind</h2>
+    </div>
+
+    <!-- Beat rate ,flexible , clean tag -->
+    <div id="BestRate">
+        <div><img src="4th.png" alt="4th" width="15%"> <label for="">Beat Rate Guarantee</label> </div>
+        <div><img src="5th.png" alt="5th" width="15%"><label for="">Flexible Cancellation</label></div>
+        <div><img src="6th.png" alt="6th" width="19%">
+            <label for="">Commitment to Clean</label>
+        </div>
+        <div><img src="7th.png" alt="7th" width="11%"><label for="">Contactless Services</label> </div>
+    </div>
+
+<!-- black box -->
+<div id="innersignin">
+    <!-- logo box -->
+    <div class="secondlogo">
+        <img src="2nd logo.png" alt="2nd logo" width="100%" height="100%">
+    </div>
+    <!-- signin box -->
+    <div>
+        <div class="Note">Please enter the password for your account</div> 
+        <div class="sigininner">
+            <div class="Emailinput">
+                Email or Member Number
+                <br>
+                <input type="text" placeholder="637*****" id="Emailinput">
+            </div>
+            <div class="Passwordinput">
+                Password
+                <br>
+                <input type="text" id="passwordinput">
+               <div class="checkbox"><input type="checkbox" id="checkbox"> Remember me
             </div> 
+            </div>
+            <div class="signinbut">
+                <button id="signinbut">SIGN IN</button>
+            </div>
         </div>
+        <div class="Note2">
+             <div class="forgot">Forgot password</div>&emsp;|&emsp;
+            <div class="clear">Clear remembered account</div>
+        </div> 
     </div>
+</div>
 
-</div>  
 
-   
+
+
+
+
+
+<div id="check"></div>
+
 
 
 </body>
+
 </html>
