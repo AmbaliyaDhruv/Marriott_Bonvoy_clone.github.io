@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #options{
+            display: flex;
+            margin: 2%;
+        }
+      #cardsection{
+        margin-left: 10%;
+        width: 80%;
+        /* border: 1px solid rebeccapurple; */
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+      #proceed{
+          height: 45px;
+          background-color: white;
+          margin: 3%;
+      }
+#card_number,#expiry_month,#expiry_year{
+    font-size: larger;
+    width: 90%;
+    height: 30px;
+}
+
+h2,h1{
+    font-family:sans-serif;
+}
+hr{
+    background-color: gainsboro;
+}
+#mapicon,#phoneicon,#hearticon,#checkicon,#foodicon,#spaicon,#weighticon,#wifiicon{
+    width: 20px;
+    height: 18px;
+    margin-right: 5px;
+}
+#ratingicon{
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid red; */
+    margin-top: 8px ;
+}
+#hotelrating{
+   /* border: 1px solid red; */
+padding-top: 19px;
+    margin: 0px;
+    margin-left: 2px;
+    
+}
+#abouthotel,#highlights{
+    display: flex;
+
+   margin: 2px;
+}
+#abouthotel>p,#highlights>p{
+    margin-right: 10px;
+   /* border: 1px solid brown; */
+}
+#hoteldetails{
+   background-color: gainsboro;
+  
+}
+img{
+    color:gray;
+}
+#hotelname,#hoteladdress,#exclusive{
+    margin-left: 20%;
+}
+
+    </style>
+</head>
+<body>
+    <!-- hotelDetails -->
+    <div id="hoteldetails">
+        <h2 id="hotelname">JW MARRIOTT HOTEL BENGALURU</h2>
+        <div id="abouthotel">
+            <p id="hoteladdress"><img src="placeholder.png" id="mapicon">24/1 Vittal Mallaya Road,Bengaluru 560001 India</p>
+            <p id="hotelphone"><img src="phone-call.png" id="mapicon" id="phoneicon">+91 80671899999</p>
+            <p><img src="heart.png" alt="" id="hearticon">Save</p>
+            <img src="rating.png" alt="" id="ratingicon">
+            <p id="hotelrating">4.0</p>
+            <p id="hotelreview">482 Reviews</p>
+            <p id="calculator">Currency Calculator</p>
+        </div>
+        <div id="highlights">
+            <p id="exclusive">EXCLUSIVE AMENITIES</p>
+            <p><img src="check-in.png" alt="" id="checkicon">Digital Check-In</p>
+            <p><img src="food-tray.png" alt="" id="foodicon">Service Request</p>
+            <p><img src="spa.png" alt="" id="spaicon">Spa</p>
+            <p><img src="weight.png" alt="" id="weighticon">Fitness</p>
+            <p><img src="wifi.png" alt="" id="wifiicon">Internet</p>
+        </div>
+    </div>
+    <div id="cardsection">
+        <h1>Credit Card</h1>
+        <p>Credit/Debit Card Number</p>
+        <input type="number" id="card_number">
+        <p>Expiration Month</p>
+        <input type="number" id="expiry_month">
+        <p>Expiration Year</p>
+        <input type="number" id="expiry_year">
+        <div id="options">
+            <input type="checkbox" id="business">
+            <label for="business">business</label>
+            <input type="checkbox" id="Personal">
+            <label for="Personal">Personal</label>
+            <input type="checkbox" id="other">
+            <label for="other">other</label>
+        </div>
+        
+       <div><input type="checkbox" id="Make my prefferd card"><label for="Make my prefferd card">Make my prefferd card</label></div> 
+        <button id="proceed" onclick="otp()">Proceed to Pay</button>
+        <h1>Hotel Cancellation Policy</h1>
+        <p id="reserve">About reservation:</p>
+        <p id="info">You may cancel your reservation for no charge before 11:59 PM local hotel time on 1 day[s] before arrival. Please note that we will assess a fee if you must cancel after this deadline</p>
+        <hr>
+        <h2 id="other1">Or use another payment method</h2>
+        <hr>
+        <h2>For travel agents and planners</h2>
+        <hr>
+    </div>
+</body>
+</html>
+<script>
+function otp(){
+  setTimeout(()=>{
+      window.location.href="otp.html";
+  },3000);
+}
+</script>
