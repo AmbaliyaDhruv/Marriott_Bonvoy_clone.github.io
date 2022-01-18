@@ -316,3 +316,66 @@ z-index: 20px;
     cursor: pointer;
 }
 
+#firstPoster{
+    width: 77.5%;
+    /* border: 2px solid violet; */
+    height: 450px;
+    margin: auto;
+    margin-top:55px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+#firstPoster>div{
+    /* border: 2px solid black; */
+    width: 100%;
+    background-color: white;
+}
+
+.leftsidePoster{
+    /* border:2px solid gold; */
+    width: 95%;
+    height:100px;
+    margin: auto;
+   
+
+}
+
+.rightsidePoster{
+    /* border:2px solid gold; */
+    width: 95%;
+    height:100px;
+    margin: auto;
+
+    
+}
+
+.tours{
+    color: tomato;
+    font-size:12px ;
+    font-weight: bolder;
+    margin-top: 45px;
+    position: relative;
+    top: 1px;
+   
+}
+
+.tours:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.learn{
+    color: tomato;
+    font-size:12px ;
+    font-weight: bolder;
+    position: relative;
+    top: 1px;
+}
+
+.learn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
