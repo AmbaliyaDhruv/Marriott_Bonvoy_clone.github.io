@@ -51,6 +51,7 @@
       <input type="text" placeholder="place_name" id="place" />
   
       <input type="text" placeholder="hotele address" id="hotele_address" />
+      <input type="text" placeholder="contact" id="contact">
   
       <input type="text" placeholder=" hotel price" id="price" />
       <input type="text" placeholder="hotel name" id="hotel_name">
@@ -97,12 +98,13 @@
 <script>
   async  function addProduct(){
      let place_name=document.getElementById("place").value
-     let hotel_address=document.getElementById("hotele_address").value
+     let hotele_address=document.getElementById("hotele_address").value
      let  hotel_name=document.getElementById("hotel_name").value
      let price=document.getElementById("price").value
      let  main_image=document.getElementById("main_image").value
      let  brand_name=document.getElementById("brand").value
      let  filter_name=document.getElementById("filter").value
+     let contact=document.getElementById("contact").value
      let  room1=document.getElementById("room1").value
      let  room2=document.getElementById("room2").value
      let  room3=document.getElementById("room3").value
@@ -118,6 +120,7 @@
             place_name,
             hotele_address,
             price,
+            contact,
             hotel_name,
             main_image,
             brand_name,

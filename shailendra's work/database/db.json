@@ -1,3 +1,74 @@
 {
-  "product": []
+  "product": [
+    {
+      "place_name": "Mumbai",
+      "hotele_address": "462, Senapati Bapat Marg, Lower Parel Mumbai, India 400013",
+      "price": "7840",
+      "hotel_name": "The St. Regis Mumbai",
+      "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-exterior-1522-hor-feat.jpg?resize=373:150&output-quality=70",
+      "brand_name": "STREGIS",
+      "filter_name": "Filter center",
+      "room": [
+        "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-the-boardroom-1544-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-wedding-terrace-9866-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-state-room-1542-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-pallazio-theatre-9861-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-presidential-suite-9864-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px"
+      ],
+      "id": 1
+    },
+    {
+      "place_name": "Mumbai",
+      "hotele_address": "Dr Babasaheb Ambedkar Road, Parel Mumbai, India 400012",
+      "price": "4949",
+      "hotel_name": "TC Grand Central, a Luxury Collection Hotel, Mumbai",
+      "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-exterior-3208-hor-feat.jpg?resize=373:150&output-quality=70",
+      "brand_name": "LUXERY",
+      "filter_name": "Fitness center",
+      "room": [
+        "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-queen-suite-0131-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-presidential-suite-livingroom-0130-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-classroom-3211-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-banquet-3204-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-banquet-3203-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px"
+      ],
+      "id": 2
+    },
+    {
+      "place_name": "Mumbai",
+      "hotele_address": "Juhu Tara Road Mumbai, India 400049",
+      "price": "7350",
+      "contact": {},
+      "hotel_name": "JW Marriott Mumbai Juhu",
+      "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-pool-7760-hor-feat.jpg?resize=373:150&output-quality=70",
+      "brand_name": "JW marriot",
+      "filter_name": "Fitness center",
+      "room": [
+        "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-studio-suite-5216-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-suite-2977-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-executive-6724-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-executive-6996-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-executive-6725-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px"
+      ],
+      "id": 3
+    },
+    {
+      "place_name": "Mumbai",
+      "hotele_address": "IA Project Road, Chhatrapati Shivaji International Airport, Andheri Mumbai, India 400099",
+      "price": "5390",
+      "contact": {},
+      "hotel_name": "JW Marriott Mumbai Sahar",
+      "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-exterior-0023-hor-feat.jpg?resize=373:150&output-quality=70",
+      "brand_name": "JW marriot",
+      "filter_name": "Fitness center",
+      "room": [
+        "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-premium-suite-2068-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-outdoor-0031-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-grand-ballroom-6737-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-studio-four-6746-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-studio-three-6745-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px"
+      ],
+      "id": 4
+    }
+  ]
 }
