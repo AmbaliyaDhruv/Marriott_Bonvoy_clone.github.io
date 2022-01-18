@@ -51,6 +51,7 @@
       <input type="text" placeholder="place_name" id="place" />
   
       <input type="text" placeholder="hotele address" id="hotele_address" />
+      <input type="text" placeholder="contact" id="contact">
   
       <input type="text" placeholder=" hotel price" id="price" />
       <input type="text" placeholder="hotel name" id="hotel_name">
@@ -97,12 +98,13 @@
 <script>
   async  function addProduct(){
      let place_name=document.getElementById("place").value
-     let hotel_address=document.getElementById("hotele_address").value
+     let hotele_address=document.getElementById("hotele_address").value
      let  hotel_name=document.getElementById("hotel_name").value
      let price=document.getElementById("price").value
      let  main_image=document.getElementById("main_image").value
      let  brand_name=document.getElementById("brand").value
      let  filter_name=document.getElementById("filter").value
+     let contact=document.getElementById("contact").value
      let  room1=document.getElementById("room1").value
      let  room2=document.getElementById("room2").value
      let  room3=document.getElementById("room3").value
@@ -118,6 +120,7 @@
             place_name,
             hotele_address,
             price,
+            contact,
             hotel_name,
             main_image,
             brand_name,
@@ -175,12 +178,12 @@
           console.log(data)
 
 
-        //    data.map(function({place_name,name,price}){
+        //    data.map(function({main_image}){
         //     let div=document.createElement("div")
-        //     let all_id=document.createElement("p")
-        //     let all_name=document.createElement("p")
-        //     let all_price=document.createElement("p")
-        //   all_id.textContent=`ID --- ${place_name}`
+        //     let all_id=document.createElement("img")
+        // //     let all_name=document.createElement("p")
+        // //     let all_price=document.createElement("p")
+        //    all_id.textContent=`ID --- ${ main_image}`
         //   all_name.textContent=`Name --- ${hotele_address}`
         //   all_price.textContent=`Price --- ${price}`
         //   div.append(all_id,all_name,all_price)
