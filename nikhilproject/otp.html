@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Verification</title>
+    <style>
+        #otp{
+margin-left: 40%;
+margin-top: 150px;
+
+width: 350px;
+height: 350px;
+}
+#enter{
+    margin-top: 25px;
+}
+    </style>
+
+</head>
+<body>
+   <div id="otp"> <h2 id="enter">Please Enter Otp</h2>
+    <input type="number" placeholder="OTP" id="number">
+    <button id="submit" onclick="verifyotp()">Submit</button></div>
+</body>
+</html>
+<script>
+function verifyotp(){
+    var value=document.getElementById("number").value;
+    if(value==123456){
+        alert("Verifying OTP");
+        setTimeout(()=>{
+            window.location.href="confirmation.html";
+        })
+    }else{
+        alert("Invalid OTP");
+    }
+}
+
+</script>
