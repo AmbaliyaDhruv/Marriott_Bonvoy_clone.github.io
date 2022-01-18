@@ -3,6 +3,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     color: rgb(0, 0, 0);
+    
 }
 #navbar{
     /* border: 2px solid black; */
@@ -12,6 +13,7 @@ body{
     border-top:5px solid black;
     display: flex;
     background-color: white;
+    /* margin-top:-22px; */
 }
 
 .category{
@@ -30,7 +32,7 @@ body{
     width: 10%;
     height: 140px;
     margin-left: 170px;
-    margin-top: 2px;
+    margin-top: 0.5px;
     z-index: 2px;
 
 }
@@ -55,3 +57,57 @@ body{
    font-size: 14px;
 }
 
+
+.peace{
+    border: 2px solid red;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#findbox{
+    border: 2px solid teal;
+    width: 75%;
+    margin: auto;
+    height: 130px;
+    margin-left:13%;
+    margin-top: -80px;
+    position: absolute;
+    background-color: white;
+   
+}
+
+
+.explore{
+position: absolute;
+margin-top: -360px;
+margin-left: 170px;
+color: white;
+font-size: 50px;
+font-weight:bolder;
+z-index: 20px;
+
+}
+
+.btuimg{
+    position: relative;
+}
+
+.ExMore{
+    position: absolute;
+    top: 45%;
+    left: 250px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(48, 47, 47);
+    color: white;
+    font-size: 15px;
+    padding: 12px 24px;
+    border:1px solid white;
+    cursor: pointer;
+    font-weight: 600;
+    
+    text-align: center;
+}
