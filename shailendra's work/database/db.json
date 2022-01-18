@@ -69,6 +69,42 @@
         "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-studio-three-6745-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px"
       ],
       "id": 4
+    },
+    {
+      "place_name": "Mumbai",
+      "hotele_address": "CTS 215, Opposite Carnival Cinemas, Andheri Kurla Road, Andheri East Mumbai, India 400059",
+      "price": "3773",
+      "contact": "+91 22 6136 9999",
+      "hotel_name": "Courtyard Mumbai International Airport",
+      "main_image": "",
+      "brand_name": "COUNTRYYARD",
+      "filter_name": "Fitness center",
+      "room": [
+        "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-junior-suite-2173-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-suite-0043-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-courtyard-bedroom-6289-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-twin-guestroom-2168-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-king-guestroom-2166-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px"
+      ],
+      "id": 5
+    },
+    {
+      "place_name": "Mumbai",
+      "hotele_address": "ITC Maratha, a Luxury Collection Hotel, Mumbai",
+      "price": "4900",
+      "contact": "+91 22 2830 3030",
+      "hotel_name": "ITC Maratha, a Luxury Collection Hotel, Mumbai",
+      "main_image": "https://cache.marriott.com/marriottassets/marriott/LC/lc-main-001-hor-feat.jpg?resize=373:150&output-quality=70",
+      "brand_name": "LUXERY",
+      "filter_name": "Fitness center",
+      "room": [
+        "https://cache.marriott.com/marriottassets/marriott/BOMLC/bomlc-luxury-suite-7680-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMLC/bomlc-kaya-spa-7687-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMLC/bomlc-dynasty-7692-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMLC/bomlc-prive-boardroom-7684-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
+        "https://cache.marriott.com/marriottassets/marriott/BOMLC/bomlc-king-suite-7682-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px"
+      ],
+      "id": 6
     }
   ]
 }
