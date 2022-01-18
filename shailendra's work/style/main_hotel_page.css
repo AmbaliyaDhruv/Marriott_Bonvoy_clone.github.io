@@ -1,30 +1,69 @@
+body{
+    background-color:rgb(244, 244, 244);
+}
 #container{
     /* border: 2px solid red; */
+   
+    
 }
 #main{
     /* border: 2px solid red; */
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 #main>div{
-    /* border: 2px solid red; */
+    border: 1px solid rgb(214, 208, 208);
+    background-color: white;box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+    
 }
 #main>div>div{
     display: flex;
     /* border: 2px solid red; */
-    gap: 10%;
+    gap: 6%;
+   
+}
+#main>div>div:nth-child(1){
+     border-bottom: 1px solid black;
+     padding-bottom: 0.2%;
+     
 }
 #main>div>div>div>img{
     height: 100%;
     width: 100%;
 }
 #main>div>div:nth-child(2){
+
     justify-content: right;
     padding-right: 10%;
     gap: 10%;
+    align-items: center;
+    align-content: center;
+}
+#main>div>div:nth-child(2)>div:nth-child(2){
+    height: 10%;
+    width: 15%;
+   text-align: center;
+   padding: 0px;
+   background-color: rgb(77, 73, 73);
+   color: white;
+
+
+
+}
+#main>div>div:nth-child(2)>div:nth-child(2):hover{
+    background-color: rgb(105, 102, 102);
+    transition: 0.2s ease-in;
+    cursor: pointer;
 }
 #main>div>div:nth-child(1)>div:nth-child(2)>div{
     display: flex;
-    border: 1px solid black;
+    border: 0.3px solid rgb(247, 233, 233);
     justify-content: space-around;
+    width: 80%;
 }
 #main>div>div>div{
     /* border: 2px solid red; */
