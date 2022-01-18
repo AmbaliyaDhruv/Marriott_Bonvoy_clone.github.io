@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+
+        /* popup styling */
+        .bg-modal{
+            width:100%;
+            height: 650px;
+            background-color: rgba(0,0,0,0.7);
+            position: absolute;
+            /* top: 0; */
+            justify-content: center;
+            display: none;
+
+        }
+        .modal-content{
+            background-color: white;
+            width: 600px;
+            height: 650px;
+            text-align: center;
+            position: relative;
+        }
+        .close1{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            transform: rotate(45);
+            font-size: 40px;
+        }
+
+        .close2{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            transform: rotate(45);
+            font-size: 40px;
+        }
+
+        .bg-modal2{
+            width:100%;
+            height: 650px;
+            background-color: rgba(0,0,0,0.7);
+            position: absolute;
+            /* top: 0; */
+            justify-content: center;
+            display: none;
+
+        }
+
+        .modal-content2{
+            background-color: white;
+            width: 600px;
+            height: 650px;
+            text-align: center;
+            position: relative;
+        }
+
+
+        #navbar {
+            display: flex;
+            border: 1px solid rgb(27, 23, 23);
+            justify-content: right;
+            gap: 20px;
+            padding: 10px 50px;
+        }
+
+        /* #main {
+            display: flex;
+            border: 1px solid blue;
+        }
+
+        #main div {
+            flex: 1;
+        } */
+
+        form {
+            width: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <p>Menu</p>
+        <p id="sign_in" ><a href="#">sign up</a></p>
+        <p id="login"><a href="#">login</a></p>
+    </div>
+    
+    <div class="bg-modal" >
+
+        <div class="modal-content">
+            <div class="close1">+</div>
+            <form onsubmit="Register(event)">
+                <h1>Register</h1>
+
+                <p>First Name</p>
+                <input type="text" id="name1" placeholder="First Name">
+
+                <p>Last Name</p>
+                <input type="text" id="name2" placeholder="Last Name">
+
+                <p>Region</p>
+                <select name="" id="region">
+                    <option value="">USA</option>
+                    <option value="">INDIA</option>
+                    <option value="">UK</option>
+                    <option value="">RUSSIA</option>
+                </select>
+
+                <p>Email</p>
+                <input type="email" id="email" placeholder="Email">
+
+                <p>Username</p>
+                <input type="text" id="username" placeholder="username">
+
+                <p>Password</p>
+                <input type="password" id="password" placeholder="password">
+                <p>By signing up, I agree to Marriott's Terms of Use and Marriott Bonvoy Terms and Conditions. I also
+                    acknowledge Marriott's Privacy Statement located in the Privacy Center.</p>
+
+                <input type="submit">
+            </form>
+
+        </div>
+    </div>
+
+    <div class="bg-modal2">
+        <div class="modal-content2" >
+            <div class="close2">+</div>
+            <form onsubmit="login(event)">
+                <h1>Login</h1>
+
+                <p>Username</p>
+                <input type="text" id="username-login" placeholder="username">
+
+                <p>Password</p>
+                <input type="password" id="password-login" placeholder="password">
+
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    //popup for sign-in
+   document.getElementById("sign_in").addEventListener("click",function(){
+       console.log("here")
+       document.querySelector(".bg-modal2").style.display="none"
+       document.querySelector(".bg-modal").style.display ="flex"
+
+   })
+
+   document.querySelector(".close1").addEventListener("click", function(){
+       document.querySelector(".bg-modal").style.display="none"
+   })
+
+
+//popup for signup
+document.getElementById("login").addEventListener("click",function(){
+       console.log("here")
+       document.querySelector(".bg-modal").style.display="none"
+       document.querySelector(".bg-modal2").style.display ="flex"
+   })
+
+   document.querySelector(".close2").addEventListener("click", function(){
+       document.querySelector(".bg-modal2").style.display="none"
+   })
+
+    async function Register(e) {
+        try {
+            e.preventDefault()
+            var register_data = {
+                name1: document.getElementById("name1").value,
+                name2: document.getElementById("name2").value,
+
+                region: document.getElementById("region").value,
+
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value,
+
+                username: document.getElementById("username").value,
+            };
+
+            register_data = JSON.stringify(register_data);
+            console.log("register_data :", register_data)
+
+        } catch (err) {
+            console.log("err :", err)
+        }
+
+        let reg_url = `https://masai-api-mocker.herokuapp.com/auth/register`;
+
+        let response = await fetch(reg_url, {
+
+            method: "POST",
+
+            body: register_data,
+
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        let data = await response.json();
+        console.log("data :", data)
+    }
+
+
+    //new discussion login
+
+    async function login(e) {
+        e.preventDefault()
+        let login_data = {
+            username: document.getElementById("username-login").value,
+
+            password: document.getElementById("password-login").value,
+
+        }
+
+        login_data = JSON.stringify(login_data)
+
+        let login_url = `https://masai-api-mocker.herokuapp.com/auth/login`
+
+        let response = await fetch(login_url, {
+            method: "POST",
+
+            body: login_data,
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        let data = await response.json();
+
+        console.log("data :", data);
+
+        let username = document.getElementById("username-login").value;
+
+        getUser(username, data.token);
+    }
+
+</script>
