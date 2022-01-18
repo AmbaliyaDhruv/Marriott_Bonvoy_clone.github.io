@@ -6,28 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-     
 
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+
+    <style>
         /* popup styling */
-        .bg-modal{
-            width:100%;
+        .bg-modal {
+            width: 100%;
             height: 650px;
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0, 0, 0, 0.7);
             position: absolute;
-            /* top: 0; */
             justify-content: center;
             display: none;
 
         }
-        .modal-content{
+
+        .modal-content {
             background-color: white;
             width: 600px;
             height: 650px;
-            text-align: center;
+            /* text-align: center; */
             position: relative;
         }
-        .close1{
+
+        .close1 {
             position: absolute;
             top: 0;
             right: 10px;
@@ -35,7 +37,7 @@
             font-size: 40px;
         }
 
-        .close2{
+        .close2 {
             position: absolute;
             top: 0;
             right: 10px;
@@ -43,10 +45,10 @@
             font-size: 40px;
         }
 
-        .bg-modal2{
-            width:100%;
+        .bg-modal2 {
+            width: 100%;
             height: 650px;
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0, 0, 0, 0.7);
             position: absolute;
             /* top: 0; */
             justify-content: center;
@@ -54,11 +56,11 @@
 
         }
 
-        .modal-content2{
+        .modal-content2 {
             background-color: white;
             width: 600px;
             height: 650px;
-            text-align: center;
+            /* text-align: center; */
             position: relative;
         }
 
@@ -68,20 +70,53 @@
             border: 1px solid rgb(27, 23, 23);
             justify-content: right;
             gap: 20px;
-            padding: 10px 50px;
+            padding: 5px 50px;
         }
-
-        /* #main {
-            display: flex;
-            border: 1px solid blue;
-        }
-
-        #main div {
-            flex: 1;
-        } */
 
         form {
-            width: 50%
+            width: 50%;
+
+        }
+
+        input {
+            padding: 10px 200px;
+            text-align: left;
+        }
+
+        select {
+            margin-left: 5px;
+            padding: 10px 247px;
+        }
+
+        label {
+            margin-left: 5px;
+            float: left;
+            width: 150px;
+            margin-bottom: 10px;
+            /*or whatever you want the spacing to be*/
+        }
+
+        input {
+            margin-left: 5px;
+            float: left;
+            /* width: 150px; */
+            margin-bottom: 10px;
+            /*or whatever you want the spacing to be*/
+        }
+        #cond{
+            display:inline-block;
+            text-align:justify;
+            border: 1px solid red;
+        }
+        .signup-submit{
+         padding:10px 268px; 
+        }
+        .login-submit{
+            margin-top: 10px;
+            padding: 10px 262px;
+        }
+        h1{
+            display: inline-block;
         }
     </style>
 </head>
@@ -89,53 +124,67 @@
 <body>
     <div id="navbar">
         <p>Menu</p>
-        <p id="sign_in" ><a href="#">sign up</a></p>
+        <p id="sign_up"><a href="#">sign up</a></p>
         <p id="login"><a href="#">login</a></p>
+        <p id="profile-name">User</p>
     </div>
-    
-    <div class="bg-modal" >
+
+
+    <div class="bg-modal">
 
         <div class="modal-content">
-            <div class="close1">+</div>
+            <div class="close1">x</div>
+
             <form onsubmit="Register(event)">
                 <h1>Register</h1>
+                <br>
 
-                <p>First Name</p>
-                <input type="text" id="name1" placeholder="First Name">
-
-                <p>Last Name</p>
-                <input type="text" id="name2" placeholder="Last Name">
-
-                <p>Region</p>
+                <label>First Name</label>
+               
+                <input type="text" id="name1" placeholder="First Name" required>
+               
+                <label>Last Name</label>
+              
+                <input type="text" id="name2" placeholder="Last Name" required>
+              
+                <label>Region</label>
+               
                 <select name="" id="region">
                     <option value="">USA</option>
                     <option value="">INDIA</option>
                     <option value="">UK</option>
                     <option value="">RUSSIA</option>
                 </select>
-
-                <p>Email</p>
-                <input type="email" id="email" placeholder="Email">
-
-                <p>Username</p>
-                <input type="text" id="username" placeholder="username">
-
-                <p>Password</p>
-                <input type="password" id="password" placeholder="password">
-                <p>By signing up, I agree to Marriott's Terms of Use and Marriott Bonvoy Terms and Conditions. I also
+               
+                <label>Email</label>
+               
+                <input type="email" id="email" placeholder="Email" required>
+                
+                <label>Username</label>
+               
+                <input type="text" id="username" placeholder="username" required>
+            
+                <label>Password</label>
+              
+                <input type="password" id="password" placeholder="password" required>
+               
+                <p id="cond">By signing up, I agree to Marriott's Terms of Use and Marriott Bonvoy Terms and Conditions.
+                   I also
                     acknowledge Marriott's Privacy Statement located in the Privacy Center.</p>
-
-                <input type="submit">
+              
+                <input type="submit" class="signup-submit">
             </form>
 
         </div>
     </div>
 
     <div class="bg-modal2">
-        <div class="modal-content2" >
-            <div class="close2">+</div>
-            <form onsubmit="login(event)">
-                <h1>Login</h1>
+        <div class="modal-content2">
+            <div class="close2">x</div>
+
+            <form onsubmit="Login(event)">
+                <h1>Welcome to Marriott Bonvoy</h1>
+                <h1>SignIn To Your Account</h1>
 
                 <p>Username</p>
                 <input type="text" id="username-login" placeholder="username">
@@ -144,7 +193,7 @@
                 <input type="password" id="password-login" placeholder="password">
 
                 <br><br>
-                <input type="submit">
+                <input type="submit" class="login-submit">
             </form>
         </div>
     </div>
@@ -154,73 +203,62 @@
 
 <script>
 
-    //popup for sign-in
-   document.getElementById("sign_in").addEventListener("click",function(){
-       console.log("here")
-       document.querySelector(".bg-modal2").style.display="none"
-       document.querySelector(".bg-modal").style.display ="flex"
+    var arr = JSON.parse(localStorage.getItem("userData")) || []
 
-   })
+    //popup for sign-up
+    document.getElementById("sign_up").addEventListener("click", function () {
+        console.log("here")
+        document.querySelector(".bg-modal2").style.display = "none"
+        document.querySelector(".bg-modal").style.display = "flex"
 
-   document.querySelector(".close1").addEventListener("click", function(){
-       document.querySelector(".bg-modal").style.display="none"
-   })
+    })
+
+    document.querySelector(".close1").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none"
+    })
 
 
-//popup for signup
-document.getElementById("login").addEventListener("click",function(){
-       console.log("here")
-       document.querySelector(".bg-modal").style.display="none"
-       document.querySelector(".bg-modal2").style.display ="flex"
-   })
+    //popup for login
+    document.getElementById("login").addEventListener("click", function () {
+        console.log("here")
+        document.querySelector(".bg-modal").style.display = "none"
+        document.querySelector(".bg-modal2").style.display = "flex"
+    })
 
-   document.querySelector(".close2").addEventListener("click", function(){
-       document.querySelector(".bg-modal2").style.display="none"
-   })
+    document.querySelector(".close2").addEventListener("click", function () {
+        document.querySelector(".bg-modal2").style.display = "none"
+    })
 
-    async function Register(e) {
-        try {
-            e.preventDefault()
-            var register_data = {
-                name1: document.getElementById("name1").value,
-                name2: document.getElementById("name2").value,
+    function Register(e) {
 
-                region: document.getElementById("region").value,
+        e.preventDefault()
+        var register_data = {
+            name1: document.getElementById("name1").value,
+            name2: document.getElementById("name2").value,
 
-                email: document.getElementById("email").value,
-                password: document.getElementById("password").value,
+            region: document.getElementById("region").value,
 
-                username: document.getElementById("username").value,
-            };
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
 
-            register_data = JSON.stringify(register_data);
-            console.log("register_data :", register_data)
+            username: document.getElementById("username").value,
+        };
 
-        } catch (err) {
-            console.log("err :", err)
-        }
+        arr.push(register_data)
+        console.log(register_data)
+        localStorage.setItem("userData", JSON.stringify(arr))
 
-        let reg_url = `https://masai-api-mocker.herokuapp.com/auth/register`;
+        alert("Registration Successful")
+        window.location.href = "login.html"
 
-        let response = await fetch(reg_url, {
-
-            method: "POST",
-
-            body: register_data,
-
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-
-        let data = await response.json();
-        console.log("data :", data)
     }
+
+
 
 
     //new discussion login
 
-    async function login(e) {
+    function Login(e) {
         e.preventDefault()
         let login_data = {
             username: document.getElementById("username-login").value,
@@ -229,26 +267,35 @@ document.getElementById("login").addEventListener("click",function(){
 
         }
 
-        login_data = JSON.stringify(login_data)
+        let flag = false;
 
-        let login_url = `https://masai-api-mocker.herokuapp.com/auth/login`
+        for (let i = 0; i < arr.length; i++) {
 
-        let response = await fetch(login_url, {
-            method: "POST",
+            if (login_data.username == arr[i].username && login_data.password == arr[i].password) {
+                alert("login successful")
+                flag = true;
+                window.location.href = "login.html"
 
-            body: login_data,
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
+                // document.querySelector("#sign_up").innerHTML=""
+                // document.querySelector("#login").textContent=""
 
-        let data = await response.json();
+                // document.querySelector("profile-name").textContent= "nnuuumm"
 
-        console.log("data :", data);
+                return
 
-        let username = document.getElementById("username-login").value;
+            } if (!flag) {
+                alert("Invalid Credentials ")
+                return
+            }
 
-        getUser(username, data.token);
+
+        }
+
     }
+
+    //getting profile
+
+
+
 
 </script>
