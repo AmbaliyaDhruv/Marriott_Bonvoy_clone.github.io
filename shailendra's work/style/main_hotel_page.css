@@ -1,0 +1,34 @@
+#container{
+    /* border: 2px solid red; */
+}
+#main{
+    /* border: 2px solid red; */
+}
+#main>div{
+    /* border: 2px solid red; */
+}
+#main>div>div{
+    display: flex;
+    /* border: 2px solid red; */
+    gap: 10%;
+}
+#main>div>div>div>img{
+    height: 100%;
+    width: 100%;
+}
+#main>div>div:nth-child(2){
+    justify-content: right;
+    padding-right: 10%;
+    gap: 10%;
+}
+#main>div>div:nth-child(1)>div:nth-child(2)>div{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+#main>div>div>div{
+    /* border: 2px solid red; */
+}
+td{
+    
+}
