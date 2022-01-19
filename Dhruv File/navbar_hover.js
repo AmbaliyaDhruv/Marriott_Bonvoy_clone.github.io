@@ -69,3 +69,88 @@ function clickOn1(){
         flage=true;
     }
 }
+
+
+
+function clickOn2(){
+    if(flage){
+        box.innerHTML=` <div class="hover">
+        <div id="vacation">
+             <div class="vacation_first">
+                 <div onclick="movevacationpage()">Vacations</div>
+                 <div>Explore Destination</div>
+                 <div>Homes & Villas</div>
+                 <div>Residences</div>
+                 <div>Marriott Vacation Club</div>
+             </div>
+             <div class="vacation_second">
+                 <div>The Ritz-Carlton</div>
+                 <div>All-Inclusive Vacations</div>
+                 <div>Hotel & Flight</div>
+                 <div>Cars,Tours & Activities</div>
+                 <div>Travel Tipes</div>
+                 <div>Dine + Drink</div>
+             </div>
+             <div class="vacation_third">
+                 <img src="https://cache.marriott.com/marriottassets/universal-nav/meetings-and-events/Nav_Vacations_feature_Large.png?&interpolation=progressive-bilinear&downsize=600px:*" width="100%" height="100%" alt="">
+             </div>
+             <div class="vacation_fourth">
+                 <div class="vacation_fourth_1st">Imagine Your Dream Vacation</div>
+                 <div class="vacation_fourth_2nd">Get inspiration and plan your next getaway.</div>
+                 <div class="vacation_fourth_3rd" onclick="movevacationpage()" >EXPLORE VACATION</div>
+             </div>
+        </div>
+    </div>
+`
+        flage=false;
+    }
+    else{
+        box.innerHTML=null;
+        flage=true;
+    }
+}
+
+
+function movevacationpage(){
+    window.location.href="vaction.html"
+}
+
+
+function clickOn5(){
+    if(flage){
+        box.innerHTML=` <div class="hover">
+        <div id="about_marriott">
+            <div class="about_marriott_first">
+                <div>Sign In</div>
+                <div>Marriott Bonvoy Overview</div>
+                <div>Member Benefits</div>
+                <div>How to Earn Points</div>
+            </div>
+            <div class="about_marriott_second">
+                <div>How to Use Points/Certificates</div>
+                <div>Marriott Bonvoy Credit Card</div>
+                <div>Marriott Insiders</div>
+            </div>
+            <div class="about_marriott_third">
+                <img src="https://cache.marriott.com/marriottassets/universal-nav/rewards/JoinMR_photo_121918.jpg?&interpolation=progressive-bilinear&downsize=600px:*" width="100%" height="100%" alt="">
+            </div>
+            <div class="about_marriott_foruth">
+                <div class="about_marriott_foruth_1st">Join Marriott Bonvoy</div>
+                <div class="about_marriott_foruth_3rd">
+                    <ul>
+                        <li>Enjoy our lowest rates</li>
+                        <li>Free in-room Wi-Fi</li>
+                        <li>Mobile check-in and more</li>
+                    </ul>
+                </div>
+                <div class="about_marriott_foruth_2nd">JOIN NOW</div>
+            </div>
+        </div>
+    </div> `
+        flage=false;
+    }
+    else{
+        box.innerHTML=null;
+        flage=true;
+    }
+}
