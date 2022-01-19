@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* cardcsss */
         #options{
             display: flex;
             margin: 2%;
@@ -26,17 +27,24 @@
     width: 90%;
     height: 30px;
 }
-
+#proceeddiv{
+    display: flex;
+}
+#proceedpay{
+    /* border: 1px solid red; */
+    padding-top: 25px;
+}
+/* hoteldetailscss--------- */
 h2,h1{
     font-family:sans-serif;
 }
 hr{
     background-color: gainsboro;
 }
-#mapicon,#phoneicon,#hearticon,#checkicon,#foodicon,#spaicon,#weighticon,#wifiicon{
+#mapicon,#phoneicon,#hearticon,#checkicon,#foodicon,#spaicon,#weighticon,#wifiicon,#wallicon{
     width: 20px;
     height: 18px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 #ratingicon{
     width: 40px;
@@ -58,11 +66,14 @@ padding-top: 19px;
 }
 #abouthotel>p,#highlights>p{
     margin-right: 10px;
+
    /* border: 1px solid brown; */
 }
 #hoteldetails{
+    border: 1px solid teal;
    background-color: gainsboro;
-  
+   width: 100%;
+
 }
 img{
     color:gray;
@@ -70,16 +81,69 @@ img{
 #hotelname,#hoteladdress,#exclusive{
     margin-left: 20%;
 }
+#hotelrating,#hotelreview,#hotelrating{
+    margin-right: 15px;
+    
+}
+/* -----reviewcss */
+#review{
+    margin-left: 10%;
+    /* border: 1px solid purple; */
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#roomimg{
+    width: 780px;
+    height: 300px;
+    
+}
+#reviewsub{
+    display: flex;
+    /* border: 1px solid brown; */
+}
+#roomdetails{
+    margin-left: 2%;
+}
+#edit{
+    color: brown;
+}
+/* ------fixnavcss------ */
+#fixnav{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+
+
+
+  width: 100%
+
+}
+#justdiv{
+    margin-left: 10%;
+    display: flex;
+    margin: 1px solid red;
+    justify-content: space-between;
+    width: 80%;
+}
+#flex{
+    display:flex
+}
+#wallicon{
+    /* border: 1px solid pink; */
+    padding-top: 15px;
+}
 
     </style>
 </head>
 <body>
     <!-- hotelDetails -->
+   
     <div id="hoteldetails">
-        <h2 id="hotelname">JW MARRIOTT HOTEL BENGALURU</h2>
+        <h2 id="hotelname"></h2>
         <div id="abouthotel">
-            <p id="hoteladdress"><img src="placeholder.png" id="mapicon">24/1 Vittal Mallaya Road,Bengaluru 560001 India</p>
-            <p id="hotelphone"><img src="phone-call.png" id="mapicon" id="phoneicon">+91 80671899999</p>
+            <p id="hoteladdress"><img src="placeholder.png" id="mapicon"></p>
+            <p id="address2"></p>
+            <p id="hotelphone"><img src="phone-call.png" id="mapicon" id="phoneicon"></p>
+            <p id="phone1"></p>
             <p><img src="heart.png" alt="" id="hearticon">Save</p>
             <img src="rating.png" alt="" id="ratingicon">
             <p id="hotelrating">4.0</p>
@@ -95,6 +159,48 @@ img{
             <p><img src="wifi.png" alt="" id="wifiicon">Internet</p>
         </div>
     </div>
+    <!-- ---------fixednavbar--------- -->
+    <div id="fixnav">
+        <div id="justdiv"><div id="staydate">
+            <p>Stay Dates</p>
+            <h3 id="checkinandcheckout"></h3>
+
+        </div>
+        <div id="amounttostay">
+            <p>Totat for Stay</p>
+            <h3 id="finalamount"></h3>
+        </div>
+        <div id="roomheld">
+            <div id="flex">
+                <img src="wall-clock.png" alt="" id="wallicon">
+                <p>Room Held for:</p>
+                <p id="countdown"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+    
+    <!-- revivew reservation details -->
+    <div id="review">
+        <h1>Review Reservation Details</h1>
+        <div id="reviewsub">
+       <div id="detailsdiv">
+        <img src="" alt="" id="roomimg">
+       
+       </div> 
+       <div id="roomdetails">
+           <h3 id="aboutroom"></h3>
+           <h4 id="checkin"></h4>
+           <h4 id="checkout"></h4>
+           <h4 id="countrooms"></h4>
+           <h4 id="totalguests"></h4>
+           <h3 id="edit">EDIT</h3>
+       </div>
+    </div>
+    </div>
+    <!-- cardsection -->
+  
     <div id="cardsection">
         <h1>Credit Card</h1>
         <p>Credit/Debit Card Number</p>
@@ -110,10 +216,11 @@ img{
             <label for="Personal">Personal</label>
             <input type="checkbox" id="other">
             <label for="other">other</label>
+            
         </div>
         
        <div><input type="checkbox" id="Make my prefferd card"><label for="Make my prefferd card">Make my prefferd card</label></div> 
-        <button id="proceed" onclick="otp()">Proceed to Pay</button>
+        <div id="proceeddiv" ><button id="proceed" onclick="otp()">Proceed to Pay</button> <h4 id="proceedpay"></h4></div>
         <h1>Hotel Cancellation Policy</h1>
         <p id="reserve">About reservation:</p>
         <p id="info">You may cancel your reservation for no charge before 11:59 PM local hotel time on 1 day[s] before arrival. Please note that we will assess a fee if you must cancel after this deadline</p>
@@ -131,4 +238,36 @@ function otp(){
       window.location.href="otp.html";
   },3000);
 }
+let hoteladdress=document.getElementById("address2")
+address2.textContent="working";
+let hotelname=document.getElementById("hotelname");
+hotelname.textContent="Hotel Name"
+let phone1=document.getElementById("phone1");
+phone1.textContent="153484";
+let roomimg=document.getElementById("roomimg");
+roomimg.src="https://cache.marriott.com/marriottassets/marriott/MAACY/maacy-king-0039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=780:*";
+let aboutroom=document.getElementById("aboutroom");
+aboutroom.textContent="1 King Bed, Guest Room"
+let checkin=document.getElementById("checkin");
+checkin.textContent="Check-in: today";
+let checkout=document.getElementById("checkout");
+checkout.textContent="Check-out: tommorow"
+let countrooms=document.getElementById("countrooms");
+countrooms.textContent="Rooms: 1";
+let totalguests=document.getElementById("totalguests");
+totalguests.textContent="Guests: 1"
+
+const startingMinutes=15;
+let time= startingMinutes*60;
+const countdown=document.getElementById("countdown");
+setInterval(updateCountdown,1000);
+function updateCountdown(){
+    const minutes =Math.floor(time/60);
+    let seconds=time%60;
+    seconds=seconds<10 ? '0' +seconds :seconds;
+    countdown.innerHTML=`${minutes}:${seconds}`
+    time--;
+}
+let proceedpay=document.getElementById("proceedpay");
+proceedpay.textContent="0000INR"
 </script>
