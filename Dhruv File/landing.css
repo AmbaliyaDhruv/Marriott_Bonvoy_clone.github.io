@@ -3,7 +3,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     color: rgb(0, 0, 0);
-    background-color: whitesmoke
+    
     
 }
 
@@ -81,6 +81,12 @@ body{
     position: absolute;
     background-color: white;
    
+}
+
+#middlebox{
+    background-color: whitesmoke;
+    margin-top: -20px;
+    border: 1px solid whitesmoke;
 }
 
 
@@ -417,9 +423,76 @@ z-index: 20px;
 
 #thirdPoster{
    width: 77.5%;
-   border: 2px solid red;
+   border: 2px solid white;
    margin: auto;
    margin-top:40px;
    height:120px;
    display: flex;
+   background-color: white;
 }
+
+.thirdPostertital{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top:45px;
+}
+
+.thirdPosterbtu{
+    background-color: transparent;
+    padding:10px 25px; 
+    margin-left:14%;
+    margin-top: 40px;
+    height:20px;
+   width: 9%;
+   border: 1px solid black;
+   font-weight: bolder;
+}
+
+.thirdPosterbtu:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+#fourthPoster{
+    width: 77.5%;
+    
+    margin: auto;
+    margin-top:40px;
+    margin-bottom: 40px;
+    height:120px;
+    display: flex;
+    background-color: black;
+ }
+ 
+ .fourthPostertital{
+     font-size: 22px;
+     font-weight: bolder;
+     margin-top:45px;
+     margin-left:37px;
+     line-height: 0px;
+     color: white;
+ }
+ 
+ .fourthPosterbtu{
+     background-color: transparent;
+     padding:10px 25px; 
+     margin-left:28.5%;
+     margin-top: 40px;
+     height:20px;
+      width: 9%;
+     border: 1px solid white;
+     color: white;
+     font-weight: bolder;
+     font-size: 15px;
+ }
+ 
+ .fourthPosterbtu:hover{
+     background-color:white;
+     color: black;
+     cursor: pointer;
+ }
+
+ 
+ 
