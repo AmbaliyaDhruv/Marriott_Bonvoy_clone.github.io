@@ -154,3 +154,19 @@ function clickOn5(){
         flage=true;
     }
 }
+
+
+function clickOn3(){
+    if(flage){
+        box.innerHTML=`<div class="hover">
+        <div id="ourbrands">
+            <img src="Ourbrand.png" width="100%" height="100%" alt="">
+        </div>
+    </div>`
+        flage=false;
+    }
+    else{
+        box.innerHTML=null;
+        flage=true;
+    }
+}

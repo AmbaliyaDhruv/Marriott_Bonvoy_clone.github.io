@@ -749,3 +749,12 @@ z-index: 20px;
     background-color: #53505f;
     cursor: pointer;
   }
+
+
+  #ourbrands{
+    width: 77.6%;
+    /* border: 2px solid black; */
+    margin: auto;
+    margin-top: 45px ;
+    margin-bottom: 40px;
+}
