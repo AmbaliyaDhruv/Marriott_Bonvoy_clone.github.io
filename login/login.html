@@ -10,6 +10,10 @@
     <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
 
     <style>
+        body {
+            font-family: proxima-nova, Helvetica, Arial, sans-serif;
+        }
+
         /* popup styling */
         .bg-modal {
             width: 100%;
@@ -22,6 +26,7 @@
         }
 
         .modal-content {
+            padding: 30px;
             background-color: white;
             width: 600px;
             height: 650px;
@@ -46,22 +51,25 @@
         }
 
         .bg-modal2 {
-            width: 100%;
+            width: 70%;
             height: 650px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: white;
             position: absolute;
             /* top: 0; */
             justify-content: center;
             display: none;
-
+            margin-left: 180px;
+            margin-top: 10px;
+            gap: 30px;
         }
 
         .modal-content2 {
             background-color: white;
-            width: 600px;
+            width: 80%;
             height: 650px;
             /* text-align: center; */
             position: relative;
+
         }
 
 
@@ -79,13 +87,13 @@
         }
 
         input {
-            padding: 10px 200px;
+            padding: 10px 180px;
             text-align: left;
         }
 
         select {
             margin-left: 5px;
-            padding: 10px 247px;
+            padding: 10px 226px;
         }
 
         label {
@@ -103,20 +111,69 @@
             margin-bottom: 10px;
             /*or whatever you want the spacing to be*/
         }
-        #cond{
-            display:inline-block;
-            text-align:justify;
+
+        #cond {
+            width: 500px;
+            display: inline-block;
+            text-align: justify;
             border: 1px solid red;
         }
-        .signup-submit{
-         padding:10px 268px; 
+
+        .signup-submit {
+            background-color: #444054;
+            color: white;
+            padding: 10px 264px;
+            font-size: large;
+            font-weight: bold;
+
         }
-        .login-submit{
+
+        .login-submit {
             margin-top: 10px;
-            padding: 10px 262px;
+            padding: 13px 230px;
+            background-color: #444054;
+            font-weight: bold;
+            color: white;
+            font-size: large;
         }
-        h1{
+
+        h1 {
             display: inline-block;
+        }
+
+        /* #profile-name{
+            display: none;
+        } */
+        img {
+            height: 350px;
+            width: 490px;
+        }
+
+        button {
+            padding: 15px 215px;
+            /* font-weight: bold; */
+            border: 1px solid black;
+        }
+
+        .last-p {
+            color: tomato;
+        }
+
+        #sign-letter {
+            font-size: 25px;
+        }
+
+        #fb-logo {
+            height: 30px;
+            width: 50px;
+        }
+
+        #welcome {
+            border: 1px solid blue;
+            width: 500px;
+            font-size: 28px;
+            display: inline-block;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -126,7 +183,8 @@
         <p>Menu</p>
         <p id="sign_up"><a href="#">sign up</a></p>
         <p id="login"><a href="#">login</a></p>
-        <p id="profile-name">User</p>
+
+        <p id="show-name">User</p>
     </div>
 
 
@@ -140,38 +198,38 @@
                 <br>
 
                 <label>First Name</label>
-               
+
                 <input type="text" id="name1" placeholder="First Name" required>
-               
+
                 <label>Last Name</label>
-              
+
                 <input type="text" id="name2" placeholder="Last Name" required>
-              
+
                 <label>Region</label>
-               
+
                 <select name="" id="region">
                     <option value="">USA</option>
                     <option value="">INDIA</option>
                     <option value="">UK</option>
                     <option value="">RUSSIA</option>
                 </select>
-               
+
                 <label>Email</label>
-               
+
                 <input type="email" id="email" placeholder="Email" required>
-                
+
                 <label>Username</label>
-               
+
                 <input type="text" id="username" placeholder="username" required>
-            
+
                 <label>Password</label>
-              
+
                 <input type="password" id="password" placeholder="password" required>
-               
+
                 <p id="cond">By signing up, I agree to Marriott's Terms of Use and Marriott Bonvoy Terms and Conditions.
-                   I also
+                    I also
                     acknowledge Marriott's Privacy Statement located in the Privacy Center.</p>
-              
+
                 <input type="submit" class="signup-submit">
             </form>
 
@@ -180,11 +238,11 @@
 
     <div class="bg-modal2">
         <div class="modal-content2">
-            <div class="close2">x</div>
+            <!-- <div class="close2">x</div> -->
 
             <form onsubmit="Login(event)">
-                <h1>Welcome to Marriott Bonvoy</h1>
-                <h1>SignIn To Your Account</h1>
+                <p id="welcome">Welcome to Marriott Bonvoy</p>
+                <p id="sign-letter">Sign In To Your Account</p>
 
                 <p>Username</p>
                 <input type="text" id="username-login" placeholder="username">
@@ -192,9 +250,35 @@
                 <p>Password</p>
                 <input type="password" id="password-login" placeholder="password">
 
+                <input type="checkbox" id="" name="" value="">
+                <label for="vehicle1"> Remember Me</label><br>
                 <br><br>
                 <input type="submit" class="login-submit">
+
+                <p class="last-p">Forgot password</p>
+                <p class="last-p">Activate online account</p>
+                <img id="fb-logo" src="https://i.stack.imgur.com/LKMP7.png" alt="">
             </form>
+        </div>
+        <div>
+            <h1>Join Marriott Bonvoy</h1>
+            <div class="close2">x</div>
+            <img src="https://cache.marriott.com/marriottassets/universal-nav/rewards/JoinMR_photo_121918.jpg?interpolation=progressive-bilinear&downsize=1180px:"
+                alt="">
+            <ul>
+                <li>Enjoy our lowest rates, all the time</li>
+            </ul>
+            <ul>
+                <li>
+                    Free in-room Wi-Fi
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Mobile check-in and more
+                </li>
+            </ul>
+            <button>Join Now</button>
         </div>
     </div>
 </body>
@@ -204,7 +288,7 @@
 <script>
 
     var arr = JSON.parse(localStorage.getItem("userData")) || []
-
+    console.log(arr)
     //popup for sign-up
     document.getElementById("sign_up").addEventListener("click", function () {
         console.log("here")
@@ -244,16 +328,31 @@
             username: document.getElementById("username").value,
         };
 
-        arr.push(register_data)
-        console.log(register_data)
-        localStorage.setItem("userData", JSON.stringify(arr))
+        let user_record = JSON.parse(localStorage.getItem("userData")) || []
+        if (user_record.some((v) => {
+            return v.username == register_data.username
+        })) {
+            alert("User Already Exists")
+        } else {
+            arr.push(register_data)
 
-        alert("Registration Successful")
-        window.location.href = "login.html"
+            console.log(register_data)
+
+            localStorage.setItem("userData", JSON.stringify(arr))
+
+            alert("Registration Successful")
+            window.location.href = "login.html"
+        }
+
 
     }
+//getting parsing username;
 
-
+    let x = JSON.parse(localStorage.getItem("profile_name"))
+    console.log(x)
+    var show_name = (document.getElementById("show-name"))
+    console.log("arr", arr)
+    show_name.textContent = x
 
 
     //new discussion login
@@ -272,16 +371,17 @@
         for (let i = 0; i < arr.length; i++) {
 
             if (login_data.username == arr[i].username && login_data.password == arr[i].password) {
+
                 alert("login successful")
                 flag = true;
+
+                //sending username to display in nav bar
+
+                localStorage.setItem("profile_name", JSON.stringify(login_data.username))
+
                 window.location.href = "login.html"
 
-                // document.querySelector("#sign_up").innerHTML=""
-                // document.querySelector("#login").textContent=""
-
-                // document.querySelector("profile-name").textContent= "nnuuumm"
-
-                return
+                return;
 
             } if (!flag) {
                 alert("Invalid Credentials ")
