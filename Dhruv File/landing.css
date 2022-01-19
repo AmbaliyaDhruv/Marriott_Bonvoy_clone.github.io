@@ -414,3 +414,12 @@ z-index: 20px;
     color: white;
     cursor: pointer;
 }
+
+#thirdPoster{
+   width: 77.5%;
+   border: 2px solid red;
+   margin: auto;
+   margin-top:40px;
+   height:120px;
+   display: flex;
+}
