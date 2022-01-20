@@ -1,6 +1,6 @@
-// import { json } from "body-parser"
 
-// let [destination,checkin,checkout]=JSON.parse(localStorage.getItem("checkIN_out"))
+
+let [destination,checkin,checkout]=JSON.parse(localStorage.getItem("checkIN_out"))
 let data=JSON.parse(localStorage.getItem("full_page"))
 let value=data.price
 data=data.room
@@ -87,9 +87,9 @@ select1.addEventListener("click",function(){
            no_of_day:day,
            no_of_chaild:chaild,
            no_of_adult:adult,
-        //    Destination:destination,
-        //    checkin_date:checkin,
-        //    checkout_date:checkout,
+           Destination:destination,
+           checkin_date:checkin,
+           checkout_date:checkout,
 
            total_guest:((Number(adult))+(Number(chaild)))
     }
