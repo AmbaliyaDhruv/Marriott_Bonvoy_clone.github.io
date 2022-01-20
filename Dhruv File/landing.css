@@ -945,8 +945,8 @@ z-index: 20px;
 
 
 #siginBox1{
-    /* border: 2px solid brown; */
-    /* height: 700px ; */
+
+    
     /* width: 30%; */
     z-index: 3;
     position:absolute;
@@ -962,8 +962,9 @@ z-index: 20px;
     padding: 40px;
     background-color: white;
     width: 600px;
-    height: 900px;
+    /* height: 900px; */
     /* text-align: center; */
+   
     
   
 }
@@ -1013,4 +1014,10 @@ z-index: 20px;
 select {
     margin-left: 5px;
     padding: 10px 226px;
+}
+
+
+#logOut{
+    font-weight: bolder;
+    cursor: pointer;
 }

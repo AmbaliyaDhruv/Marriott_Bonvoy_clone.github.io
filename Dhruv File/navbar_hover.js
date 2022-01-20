@@ -342,14 +342,19 @@ function siginOn(){
                 <input type="email" id="email"  class="inputcr" placeholder="Email" required>
                 <br>
 
+                <label class="labelcr">Mobile Number</label>
+
+                <input type="number" id="num" class="inputcr" placeholder="username" required>
+                <br>
+
                 <label class="labelcr">Username</label>
 
-                <input type="text" id="username" class="inputcr" placeholder="username" required>
+                <input type="text" id="user" class="inputcr" placeholder="username" required>
                 <br>
 
                 <label class="labelcr">Password</label>
 
-                <input type="password" id="password" class="inputcr" placeholder="password" required>
+                <input type="password" id="pass" class="inputcr" placeholder="password" required>
                 
                 <br>
 
@@ -370,5 +375,107 @@ function siginOn(){
     
 
 
+async function Register(event){
+    event.preventDefault();
+    let regiobj={
+        name:document.querySelector("#name1").value,
+        email:document.querySelector("#email").value,
+        username:document.querySelector("#user").value,
+        password:document.querySelector("#pass").value,
+        mobile:document.querySelector("#num").value,
+        description:document.querySelector("#name2").value,
+    }
+    regiobj=JSON.stringify(regiobj);
 
 
+    try{
+          let url='https://masai-api-mocker.herokuapp.com/auth/register'
+          
+        let response = await fetch(url,{
+            method:"POST",
+            body:regiobj,
+            headers:{
+                "Content-Type":"application/json",
+            },
+        })
+
+        let data=await response.json();
+
+        console.log(data);
+    }
+    catch(er){
+        console.log("Register side",er)
+    }
+}
+
+
+async function Login(event){
+    event.preventDefault();
+    let loginData={
+        password:document.querySelector("#password-login").value,
+        username:document.querySelector("#username-login").value,
+    }
+    loginData=JSON.stringify(loginData);
+    
+
+    try{
+        let url='https://masai-api-mocker.herokuapp.com/auth/login'
+        let response=await fetch(url,{
+            method:"POST",
+            body:loginData,
+            headers:{
+                "Content-Type":"application/json",
+            }
+        });
+        let data = await response.json();
+        console.log(data);
+        let username=document.querySelector("#username-login").value
+        getUser(username,data.token)
+    }
+
+    catch(er){
+        console.log("login side",er)
+        alert("Please fill right details")
+    }
+}
+
+let userarr=[]
+async function getUser(username,token){
+    try{
+
+        let api=`https://masai-api-mocker.herokuapp.com/user/${username}`;
+        let response1=await fetch(api,{
+            headers:{
+                "Content-Type":"application/json",
+                Authorization:`Bearer ${token}`,
+            }
+        });
+
+        let data1=await response1.json();
+        console.log(data1.name);
+        userarr.push(data1.name)
+        localStorage.setItem("UserData",JSON.stringify(userarr));
+        call(data1.name);
+        removeOn();
+    
+
+    }
+    catch(e){
+        console.log("getUser side",e);
+        alert("Please fill right details ")
+    }
+}
+
+let a= document.querySelector("#siginName")
+let b=document.querySelector("#logOut")
+function call(userName){
+
+   b.textContent="Logout"
+   a.textContent=userName;
+}
+
+
+function logOut(){
+    b.textContent="";
+    a.textContent="sigin";
+}
