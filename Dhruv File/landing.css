@@ -810,3 +810,207 @@ z-index: 20px;
     margin-top: 45px ;
     margin-bottom: 40px;
 }
+
+
+#siginBox{
+ /* border: 2px solid brown; */
+ height: 700px ;
+ width: 80%;
+ z-index: 3;
+ position: fixed;
+ top:40px;
+ left:10%;
+ background-color:white;
+ box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+ 
+}
+
+
+#siginName{
+    cursor: pointer;
+}
+
+
+
+/* aditiya css */
+
+.sign-letter {
+    font-size: 25px;
+}
+
+.sign-letter1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.welcome {
+    /* border: 1px solid blue; */
+    width: 500px;
+    font-size: 34px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.bg-modal2 {
+    width: 70%;
+    height: 650px;
+    background-color: white;
+    display: flex;
+    
+    justify-content: center;
+    
+    margin-left: 180px;
+    margin-top: 10px;
+    gap: 30px;
+    
+}
+
+.modal-content2 {
+    margin-left: 20px;
+    width: 80%;
+    height: 650px;
+    border-right: 2px solid black;
+    padding-right: 25px;
+    /* text-align: center; */
+
+
+}
+
+
+.modal-content2 input{
+    
+        padding: 10px 180px;
+        text-align: left;
+    
+}
+
+.login-submit {
+    margin-top: 10px;
+    padding: 13px 230px;
+    background-color: #444054;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+}
+
+.aditiyabtu{
+     width: 100%;
+     font-size: 20px;
+     font-weight:bold;
+     padding:10px 0px ;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.aditiyabtu:hover{
+    background-color:black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .login-submit:hover{
+    background-color: #53505f;
+    cursor: pointer;
+  }
+
+.last-p {
+    color: tomato;
+}
+
+.aditiya_right_box{
+    /* border: 2px solid black; */
+    height: 520px ;
+
+    position: relative;
+    top: 140px;
+}
+
+.cross{
+    position: absolute;
+    font-size: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+
+#create_account{
+    cursor: pointer;
+}
+
+#create_account:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+#siginBox1{
+    /* border: 2px solid brown; */
+    /* height: 700px ; */
+    /* width: 30%; */
+    z-index: 3;
+    position:absolute;
+    top:40px;
+    left:27%;
+    background-color:white;
+   
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    
+   }
+.modal-content {
+    padding: 40px;
+    background-color: white;
+    width: 600px;
+    height: 900px;
+    /* text-align: center; */
+    
+  
+}
+
+
+
+#sign-logo{
+    height: 40px;
+    width: 250px;
+}
+
+.labelcr {
+    margin-left: 5px;
+    float: left;
+    width: 150px;
+    margin-bottom: 10px;
+    /*or whatever you want the spacing to be*/
+}
+
+#cond {
+    width: 530px;
+    display: inline-block;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+
+.signup-submit {
+    background-color: #444054;
+    color: white;
+    padding: 10px 234px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.inputcr {
+    padding: 10px 180px;
+    text-align: left;
+    margin-left: 5px;
+    float: left;
+    /* width: 150px; */
+    margin-bottom: 10px;
+    /*or whatever you want the spacing to be*/
+}
+
+
+select {
+    margin-left: 5px;
+    padding: 10px 226px;
+}

@@ -216,7 +216,7 @@ function HotelsSubmit(){
 }
 
 
-// document.querySelector("#HotelsSubmit1").addEventListener("click",HotelsSubmit1)
+
 
 
 function HotelsSubmit1(){
@@ -238,3 +238,137 @@ function HotelsSubmit1(){
    
      } 
 }
+
+
+
+// sigin pop logic
+let siginbox=document.querySelector("#pop");
+
+function siginOn(){
+    
+        siginbox.innerHTML=` <div id="siginBox">
+       
+        <!-- aditiya code -->
+        <div class="bg-modal2">
+             <div class="cross" onclick="removeOn()">x</div>
+            <div class="modal-content2">
+                <!-- <div class="close2">x</div> -->
+    
+                <form onsubmit="Login(event)">
+                    <p class="welcome">Welcome to Marriott Bonvoy</p>
+                    <p class="sign-letter">Sign In To Your Account</p>
+    
+                    <p>Username</p>
+                    <input type="text" id="username-login" placeholder="username">
+    
+                    <p>Password</p>
+                    <input type="password" id="password-login" placeholder="password">
+    
+                    <input type="checkbox" id="" name="" value="">
+                    <label for="vehicle1"> Remember Me</label><br>
+                    <br><br>
+                    <input type="submit" class="login-submit">
+    
+                    <p class="last-p">Forgot password</p>
+                    <p class="last-p" id="create_account" onclick="createOn()">Activate online account</p>
+                    <img id="fb-logo" src="https://i.stack.imgur.com/LKMP7.png" alt="">
+                </form>
+            </div>
+            <div class="aditiya_right_box">
+                <div class="sign-letter1">Join Marriott Bonvoy</div>
+                
+                <img src="https://cache.marriott.com/marriottassets/universal-nav/rewards/JoinMR_photo_121918.jpg?interpolation=progressive-bilinear&downsize=1180px:"
+                height=250px  width=390px alt="">
+                <ul>
+                    <li>Enjoy our lowest rates, all the time</li>
+                </ul>
+                <ul>
+                    <li>
+                        Free in-room Wi-Fi
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Mobile check-in and more
+                    </li>
+                </ul>
+                <button class="aditiyabtu">Join Now</button>
+            </div>
+        </div>
+ 
+    </div>`
+
+    }
+
+
+    function removeOn(){
+        siginbox.innerHTML=null;
+    }
+
+
+    function createOn(){
+        siginbox.innerHTML=null;
+        siginbox.innerHTML=`<div id="siginBox1">
+
+        <div class="modal-content">
+            <div class="cross" onclick="removeOn()">x</div>
+            <p class ="welcome">Join Marriott Bonvoy</p>
+            <p class="sign-letter">Free Wi-Fi, Mobile check-in</p>
+            <img id="sign-logo" src="https://i.stack.imgur.com/oL5c2.png" alt="logo">
+            <form onsubmit="Register(event)">
+                <!-- <h1>Register</h1>
+                <br> -->
+
+                <label class="labelcr">First Name</label>
+
+                <input class="inputcr" type="text" id="name1" placeholder="First Name" required>
+
+                <label class="labelcr">Last Name</label>
+
+                <input type="text" id="name2"  class="inputcr" placeholder="Last Name" required>
+                <br>
+
+                <label class="labelcr">Region</label>
+
+                <select name="" id="region">
+                    <option value="">USA</option>
+                    <option value="">INDIA</option>
+                    <option value="">UK</option>
+                    <option value="">RUSSIA</option>
+                </select>
+
+                <label class="labelcr">Email</label>
+
+                <input type="email" id="email"  class="inputcr" placeholder="Email" required>
+                <br>
+
+                <label class="labelcr">Username</label>
+
+                <input type="text" id="username" class="inputcr" placeholder="username" required>
+                <br>
+
+                <label class="labelcr">Password</label>
+
+                <input type="password" id="password" class="inputcr" placeholder="password" required>
+                
+                <br>
+
+                
+                
+                <label for="vehicle1" class="labelcr"> Remember Me</label><br>
+                <input type="checkbox" id=""  class="inputcr" name="" value="">
+                <p id="cond">By signing up, I agree to Marriott's <span style="color:coral">Terms of Use</span> and Marriott Bonvoy <span style="color:coral">Terms and Conditions</span>.
+                    I also
+                    acknowledge Marriott's Privacy Statement located in the <span style="color:coral">Privacy Center</span>.</p>
+
+                <input type="submit" class="signup-submit">
+            </form>
+
+        </div>
+    </div>`
+    }
+    
+
+
+
+
