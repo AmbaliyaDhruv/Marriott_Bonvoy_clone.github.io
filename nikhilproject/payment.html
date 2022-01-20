@@ -104,8 +104,14 @@ img{
 #roomdetails{
     margin-left: 2%;
 }
-#edit{
+#edit>a{
     color: brown;
+    text-decoration: none;
+}
+#edit>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(236, 22, 22);
 }
 /* ------fixnavcss------ */
 #fixnav{
@@ -164,7 +170,7 @@ img{
 
         </div>
         <div id="amounttostay">
-            <p>Totat for Stay</p>
+            <p>Total for Stay</p>
             <h3 id="finalamount"></h3>
         </div>
         <div id="roomheld">
@@ -192,7 +198,7 @@ img{
            <h4 id="checkout"></h4>
            <h4 id="countrooms"></h4>
            <h4 id="totalguests"></h4>
-           <h3 id="edit">EDIT</h3>
+           <h3 id="edit" ><a href="/html/rateListmenu page.html">EDIT</a></h3>
        </div>
     </div>
     </div>
@@ -247,24 +253,33 @@ function otp(){
 }
 }
 
+let {hotel_name,hotele_address,contact}=JSON.parse(localStorage.getItem("full_page"))
+
+let {total_guest,room_name,price,no_of_room,no_of_day,no_of_chaild,no_of_adult,Destination,checkin_date,checkout_date,image_url}=JSON.parse(localStorage.getItem("master_checkout"))
+
+
 let hoteladdress=document.getElementById("address2")
-address2.textContent="working jhuyfhbHBF BAYUFTYEGFRJHBQH 500001";
+address2.textContent=`Address :${hotele_address}`;
 let hotelname=document.getElementById("hotelname");
-hotelname.textContent="HOTEL NIKHIL MARRIOT PARADISE"
+hotelname.textContent=`Hotel name : ${hotel_name}`
 let phone1=document.getElementById("phone1");
-phone1.textContent="153484";
+phone1.textContent=`Contact :${contact}`;
 let roomimg=document.getElementById("roomimg");
-roomimg.src="https://cache.marriott.com/marriottassets/marriott/MAACY/maacy-king-0039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=780:*";
+roomimg.src=image_url;
 let aboutroom=document.getElementById("aboutroom");
-aboutroom.textContent="1 King Bed, Guest Room"
+aboutroom.textContent=`1 King Bed, ${room_name}`
 let checkin=document.getElementById("checkin");
-checkin.textContent="Check-in: today";
+checkin.textContent=`Check in date: ${checkin_date.split("-").reverse().join("-")}`;
 let checkout=document.getElementById("checkout");
-checkout.textContent="Check-out: tommorow"
+checkout.textContent=`Check out date: ${checkout_date.split("-").reverse().join("-")}`;
 let countrooms=document.getElementById("countrooms");
-countrooms.textContent="Rooms: 1";
+countrooms.textContent=`Rooms: ${no_of_room} `;
 let totalguests=document.getElementById("totalguests");
-totalguests.textContent="Guests: 1"
+totalguests.textContent=`Guests: ${total_guest}`
+let stay_date=document.getElementById("checkinandcheckout")
+stay_date.textContent=`${checkin_date.split("-").reverse().join("-")} -- ${checkout_date.split("-").reverse().join("-")}`
+let stay_far=document.getElementById("finalamount")
+stay_far.textContent=`${(total_guest*price)*(Number(no_of_room)*(Number(no_of_day))).toFixed(2)} INR`
 
 const startingMinutes=15;
 let time= startingMinutes*60;
@@ -278,5 +293,5 @@ function updateCountdown(){
     time--;
 }
 let proceedpay=document.getElementById("proceedpay");
-proceedpay.textContent="3493INR"
+proceedpay.textContent=`${(total_guest*price)*(Number(no_of_room)*(Number(no_of_day))).toFixed(2)}`
 </script>
