@@ -230,11 +230,23 @@ img{
 </body>
 </html>
 <script>
+  
+
 function otp(){
+    var card_number=document.getElementById("card_number").value;
+    var expiry_month=document.getElementById("expiry_month").value;
+    var expiry_year=document.getElementById("expiry_year").value;
+    
+
+   if(card_number.length==12&&expiry_month.length!=0&&expiry_year.length!=0&&expiry_month>0&&expiry_month<=12){
   setTimeout(()=>{
       window.location.href="otp.html";
   },3000);
+}else{
+    alert("Please Enter Valid Details");
 }
+}
+
 let hoteladdress=document.getElementById("address2")
 address2.textContent="working jhuyfhbHBF BAYUFTYEGFRJHBQH 500001";
 let hotelname=document.getElementById("hotelname");

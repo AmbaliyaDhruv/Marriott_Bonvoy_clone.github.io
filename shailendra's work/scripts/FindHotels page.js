@@ -1,21 +1,21 @@
  let product= [
-    {
-      "place_name": "Hyderabad",
-      "hotele_address": "1-3-1024 Lower Tank Bund Road Hyderabad, India 500 080",
-      "price": "4018",
-      "hotel_name": "Court Yard Marriot",
-      "main_image": "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-exterior-0021-hor-feat.jpg?resize=375:150&output-quality=70",
-      "brand_name": "Marriot",
-      "filter_name": "pool",
-      "room": [
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0022-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px"
-      ],
-      "id": 1
-    },
+    // {
+    //   "place_name": "Hyderabad",
+    //   "hotele_address": "1-3-1024 Lower Tank Bund Road Hyderabad, India 500 080",
+    //   "price": "4018",
+    //   "hotel_name": "Court Yard Marriot",
+    //   "main_image": "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-exterior-0021-hor-feat.jpg?resize=375:150&output-quality=70",
+    //   "brand_name": "Marriot",
+    //   "filter_name": "pool",
+    //   "room": [
+    //     "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+    //     "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+    //     "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0022-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+    //     "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+    //     "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px"
+    //   ],
+    //   "id": 1
+    // },
     {
       "place_name": "Mumbai",
       "hotele_address": "462, Senapati Bapat Marg, Lower Parel Mumbai, India 400013",
@@ -23,7 +23,7 @@
       "hotel_name": "The St. Regis Mumbai",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-exterior-1522-hor-feat.jpg?resize=373:150&output-quality=70",
       "brand_name": "STREGIS",
-      "filter_name": "Filter center",
+      "filter_name": "Restaurant on site",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-the-boardroom-1544-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
         "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-wedding-terrace-9866-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
@@ -40,7 +40,7 @@
       "hotel_name": "TC Grand Central, a Luxury Collection Hotel, Mumbai",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-exterior-3208-hor-feat.jpg?resize=373:150&output-quality=70",
       "brand_name": "LUXERY",
-      "filter_name": "Fitness center",
+      "filter_name": "Free Breakfast",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-queen-suite-0131-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
         "https://cache.marriott.com/marriottassets/marriott/BOMRL/bomrl-presidential-suite-livingroom-0130-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
@@ -58,7 +58,7 @@
       "hotel_name": "JW Marriott Mumbai Juhu",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-pool-7760-hor-feat.jpg?resize=373:150&output-quality=70",
       "brand_name": "JW marriot",
-      "filter_name": "Fitness center",
+      "filter_name": "fitness center",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-studio-suite-5216-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
         "https://cache.marriott.com/marriottassets/marriott/BOMJW/bomjw-suite-2977-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
@@ -76,7 +76,7 @@
       "hotel_name": "JW Marriott Mumbai Sahar",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-exterior-0023-hor-feat.jpg?resize=373:150&output-quality=70",
       "brand_name": "JW marriot",
-      "filter_name": "Fitness center",
+      "filter_name": "fitness center",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-premium-suite-2068-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
         "https://cache.marriott.com/marriottassets/marriott/BOMSA/bomsa-outdoor-0031-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
@@ -94,7 +94,7 @@
       "hotel_name": "Courtyard Mumbai International Airport",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-pool-6294-hor-feat.jpg?resize=375:150&output-quality=70",
       "brand_name": "COUNTRYYARD",
-      "filter_name": "Fitness center",
+      "filter_name": "Restaurant on site",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-junior-suite-2173-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
         "https://cache.marriott.com/marriottassets/marriott/BOMCY/bomcy-suite-0043-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
@@ -112,7 +112,7 @@
       "hotel_name": "ITC Maratha, a Luxury Collection Hotel, Mumbai",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/LC/lc-main-001-hor-feat.jpg?resize=373:150&output-quality=70",
       "brand_name": "LUXERY",
-      "filter_name": "Fitness center",
+      "filter_name": "kitchen",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/BOMLC/bomlc-luxury-suite-7680-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
         "https://cache.marriott.com/marriottassets/marriott/BOMLC/bomlc-kaya-spa-7687-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=*:423px",
@@ -184,7 +184,7 @@
       "hotel_name": "Fairfield",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/BLRFB/blrfb-pool-0021-hor-feat.jpg?resize=375:150&output-quality=70",
       "brand_name": "fairfield",
-      "filter_name": "Restaurant On site",
+      "filter_name": "Restaurant on site",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/BLRFB/blrfb-king-4195-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
         "https://cache.marriott.com/marriottassets/marriott/BLRFB/blrfb-twin-4194-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
@@ -238,7 +238,7 @@
       "hotel_name": "le royal meridian",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/MAAMD/maamd-ballroom-7119-hor-feat.jpg?resize=375:150&output-quality=70",
       "brand_name": "meridien",
-      "filter_name": "Fitness center",
+      "filter_name": "kitchen",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/MAACY/maacy-king-0039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
         "https://cache.marriott.com/marriottassets/marriott/MAACY/maacy-guestroom-0032-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
@@ -256,7 +256,7 @@
       "hotel_name": "Four points by sherton",
       "main_image": "https://cache.marriott.com/marriottassets/marriott/MAAFP/maafp-exterior-8844-hor-feat.jpg?resize=375:150&output-quality=70",
       "brand_name": "four points",
-      "filter_name": "fitness center",
+      "filter_name": "Free Breakfast",
       "room": [
         "https://cache.marriott.com/marriottassets/marriott/MAAFP/maafp-king-chalet-guestroom-6601-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
         "https://cache.marriott.com/marriottassets/marriott/MAAFP/maafp-king-chalet-guestroom-6601-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
@@ -290,4 +290,99 @@
   import appendata from '/scripts/appendfunction.js'
   let main=document.querySelector("#main")
 
-  appendata(product,main)
+  
+
+  
+
+  document.querySelector("#fit").addEventListener("click",fitness_center)
+  document.querySelector("#kit").addEventListener("click",kitchen)
+  document.querySelector("#pool").addEventListener("click",pool)
+  document.querySelector("#rest").addEventListener("click",restaurent)
+  document.querySelector("#bre").addEventListener("click",free_breakfast)
+  function fitness_center(){
+     let product1=product.filter(function(ele){
+        if(ele.filter_name=="fitness center"){
+          return ele
+        }
+      })
+      console.log(product1)
+      main.innerHTML=""
+      appendata(product1,main)
+  }
+  function kitchen(){
+   let product2=product.filter(function(ele){
+      if(ele.filter_name=="kitchen"){
+        return ele
+      }
+    })
+    console.log(product2)
+    main.innerHTML=""
+    appendata(product2,main)
+}
+function pool(){
+ let product3=product.filter(function(ele){
+    if(ele.filter_name=="pool"){
+      return ele
+    }
+  })
+  console.log(product3)
+  main.innerHTML=""
+  appendata(product3,main)
+}
+function restaurent(){
+ let product4=product.filter(function(ele){
+    if(ele.filter_name=="Restaurant on site"){
+      return ele
+    }
+  })
+  console.log(product4)
+  main.innerHTML=""
+  appendata(product4,main)
+}
+function free_breakfast(){
+ let product5=product.filter(function(ele){
+    if(ele.filter_name=="Free Breakfast"){
+      return ele
+    }
+  })
+  console.log(product5)
+  main.innerHTML=""
+  appendata(product5,main)
+}
+ 
+document.querySelector("#sorting").addEventListener("change",function(){
+  let value=document.querySelector("#sorting").value
+if(value=="low"){
+  let product_sort1=product.sort(function(a,b){
+
+    return ( Number(a.price))-(Number(b.price))
+           
+    })
+    main.innerHTML=""
+    appendata(product_sort1,main)
+}else if(value=="high"){
+
+  let product_sort2=product.sort(function(a,b){
+
+    return ( Number(b.price))-(Number(a.price))
+           
+    })
+    main.innerHTML=""
+    appendata(product_sort2,main)
+
+}else{
+  let product_sort3=product.sort(function(a,b){
+
+    return 0
+           
+    })
+    main.innerHTML=""
+    appendata(product_sort3,main)
+}
+ 
+
+
+})
+
+
+appendata(product,main)
