@@ -1,6 +1,6 @@
 // import { json } from "body-parser"
 
-
+// let [destination,checkin,checkout]=JSON.parse(localStorage.getItem("checkIN_out"))
 let data=JSON.parse(localStorage.getItem("full_page"))
 let value=data.price
 data=data.room
@@ -75,42 +75,78 @@ main.append(main_div)
 
 select1.addEventListener("click",function(){
 
-  
+    let room=document.getElementById("room").value
+    let day=document.getElementById("day").value
+    let chaild=document.getElementById("chaild").value
+    let adult=document.getElementById("adult").value
+    let master_checkout={
+        image_url:url,
+        price:(ans-301),
+        room_name:"City View, Guest Room",
+           no_of_room:room,
+           no_of_day:day,
+           no_of_chaild:chaild,
+           no_of_adult:adult,
+        //    Destination:destination,
+        //    checkin_date:checkin,
+        //    checkout_date:checkout,
 
-    let checkout={
-
-        Check_in_date:`${"Wednesday"} ${"january"} ${19} ${2022}`,
-        Check_out_date:`${"Friday"} ${"january"} ${21} ${2022}`,
-        Room_name:`City View, Guest Room`,
-        Adult:`2`,
-        Guest_per_room:`2`,
-       room_image:url,
-       Price:(ans-301)
-
+           total_guest:((Number(adult))+(Number(chaild)))
     }
+    
 
-localStorage.setItem("checkout",JSON.stringify(checkout))
+let { no_of_room,no_of_day,no_of_chaild,no_of_adult}=master_checkout
+if(no_of_adult =="" || no_of_chaild =="" || no_of_day=="" || no_of_room==""){
+    alert("please fill all area")
+}else{
+
+    localStorage.setItem("master_checkout",JSON.stringify(master_checkout))
+
+    window.location.href="/html/FindHotels Page.html"
+    // this part for nikhil page
+}
+
+
+
+
+
+
 
 })
 select2.addEventListener("click",function(){
 
-  
+let room=document.getElementById("room").value
+let day=document.getElementById("day").value
+let chaild=document.getElementById("chaild").value
+let adult=document.getElementById("adult").value
+let master_checkout={
+      image_url:url,
+      price:(ans),
+       no_of_room:room,
+       room_name:"City View, Guest Room",
+       no_of_day:day,
+       no_of_chaild:chaild,
+       no_of_adult:adult,
+    //    Destination:destination,
+    //    checkin_date:checkin,
+    //    checkout_date:checkout,
+       total_guest:((Number(adult))+(Number(chaild)))
+}
+
+let { no_of_room,no_of_day,no_of_chaild,no_of_adult}=master_checkout
+if(no_of_adult =="" || no_of_chaild =="" || no_of_day=="" || no_of_room==""){
+alert("please fill all area")
+}else{
+
+localStorage.setItem("master_checkout",JSON.stringify(master_checkout))
+
+window.location.href="/html/FindHotels Page.html"
+
+ // this part for nikhil page
+}
 
 
 
-    let checkout={
-
-        Check_in_date:`${"Wednesday"} ${"january"} ${19} ${2022}`,
-        Check_out_date:`${"Friday"} ${"january"} ${21} ${2022}`,
-        Room_name:`City View, Guest Room`,
-        Adult:`1`,
-        Guest_per_room:`2`,
-       room_image:url,
-       Price:(ans)
-
-    }
-
-localStorage.setItem("checkout",JSON.stringify(checkout))
 
 })
 

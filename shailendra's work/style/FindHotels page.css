@@ -1,5 +1,6 @@
 *{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body{
@@ -105,4 +106,75 @@ body{
      100%{
          opacity: 0.6;
      }
+}
+
+p{
+    color: rgb(224, 79, 63);
+ }
+ p:hover{
+     text-decoration: underline;
+     
+     cursor: pointer;
+ }
+
+#filter{
+    display: flex;
+    border: 1px solid rgb(184, 169, 169);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+}
+#for_filter{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    gap: 15px;
+    
+    align-items: center;
+    /* gap: 20px; */
+}
+#for_filter>td{
+margin-right: -6px;
+}
+#for_filter>button{
+    padding: 1% 5px 1% 5px;
+    border-radius: 20px;
+    border: 0.2px solid rgb(230, 226, 226);
+    background-color: white;
+   
+}
+#for_filter>button:active{
+    background-color: rgb(218, 233, 218);
+}
+#for_guest{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+   
+    position: relative;
+
+}
+#for_guest>input{
+ 
+  width: 20%;
+
+}
+#gest_per_room{
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 40%;
+    /* height: 60px; */
+   
+}
+#gest_per_room>p{
+    margin-top: 3px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid gray;
+}
+#for_filter>p:hover{
+text-decoration: underline;
+cursor: pointer;
 }

@@ -1,7 +1,11 @@
 function appendata(data,main){
 
     data.map(({brand_name,filter_name,contact,hotel_name,hotele_address,main_image,place_name,price,room})=>{
-let main_div=document.createElement("div")
+
+           
+
+        let main_div=document.createElement("div")
+       
 // _____________________________________________________
 let top_div=document.createElement("div")
 let bottom_div=document.createElement("div")
@@ -50,7 +54,8 @@ main.append(main_div)
 
 rate.addEventListener("click",function(){
 
- window.location.href="/html/rateListmenu page.html"
+
+
 
 
 
@@ -67,6 +72,8 @@ rate.addEventListener("click",function(){
 
     }
     localStorage.setItem("full_page",JSON.stringify(reviwe_page))
+    window.location.href="/html/rateListmenu page.html"
+
 
 })
 
@@ -84,6 +91,7 @@ top_div.addEventListener("click",function(){
         room
 
     }
+   
     localStorage.setItem("full_page",JSON.stringify(reviwe_page))
 
     window.location.href="/html/detail page.html"
