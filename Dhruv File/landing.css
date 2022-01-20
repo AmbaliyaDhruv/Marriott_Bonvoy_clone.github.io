@@ -142,11 +142,46 @@ z-index: 20px;
     border: 1px solid gray;
 }
 
+#HotelNameinput1{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
 #Datesinput{
     width: 100%;
     height: 50px; 
     border-radius: 5px;
     border: 1px solid gray;
+}
+
+.startdate{
+    margin-left: 3px;
+    padding-right:5px;
+    border: none;
+    border-right: 2px solid black;
+    height: 94%;
+    width: 47%;
+}
+.enddate{
+    border: none;
+    height: 94%;
+    width: 47%;
+}
+
+.startdate1{
+    margin-left: 3px;
+    padding-right:5px;
+    border: none;
+    border-right: 2px solid black;
+    height: 94%;
+    width: 47%;
+}
+.enddate1{
+    border: none;
+    height: 94%;
+    width: 47%;
 }
 
 #HotelsSubmit{
@@ -161,6 +196,22 @@ z-index: 20px;
 }
 
 #HotelsSubmit:hover{
+    background-color: #53505f;
+    cursor: pointer;
+}
+
+#HotelsSubmit1{
+    width: 100%;
+    height: 50px; 
+    margin-top: 22px;
+    background-color:#444054;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+#HotelsSubmit1:hover{
     background-color: #53505f;
     cursor: pointer;
 }
@@ -504,6 +555,7 @@ z-index: 20px;
      top:125px;
      background-color: white;
      position: fixed;
+     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
  }
 
 #find_reserve{

@@ -9,16 +9,18 @@ function clickOn(){
                 <div class="find_reserve_destination">
                     Destination
                     <br>
-                    <input type="text" placeholder="city,airport,attraction or address" id="HotelNameinput">
+                    <input type="text" placeholder="city,airport,attraction or address" id="HotelNameinput1">
                 </div>
                 <div class="find_reserve_dates">
                     Dates
                     <br>
-                    <input type="text" id="Datesinput">
+                    <div id="Datesinput">  <input type="date" class="startdate1" >
+                    <input type="date" class="enddate1">
+                </div>
 
                 </div>
                 <div class="find_reserve_findHotels">
-                    <button id="HotelsSubmit">FIND HOTELS</button>
+                    <button id="HotelsSubmit1" onclick="HotelsSubmit1()">FIND HOTELS</button>
                 </div>
             </div>
             <div class="find_reserve_class">
@@ -169,4 +171,70 @@ function clickOn3(){
         box.innerHTML=null;
         flage=true;
     }
+}
+
+ 
+let arr=["https://cache.marriott.com/marriottassets/marriott/BDQCC/bdqcc-infinity-pool-4383-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1180px:*","https://cache.marriott.com/marriottassets/marriott/BDQCC/bdqcc-exterior-5133-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1180px:*","https://cache.marriott.com/marriottassets/marriott/BDQCC/bdqcc-king-5122-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1180px:*"]
+
+let i=0;
+
+let check=document.querySelector(".btuing")
+
+setInterval(()=>{
+    if(i===arr.length){
+        i=0;
+    }
+    check.src=arr[i];
+    i++;
+},3000)
+
+let hotesarr=[];
+
+document.querySelector("#HotelsSubmit").addEventListener("click",HotelsSubmit)
+
+
+function HotelsSubmit(){
+    let Destination=document.querySelector("#HotelNameinput").value;
+    let startdate=document.querySelector(".startdate").value;
+    let enddate=document.querySelector(".enddate").value;
+ 
+    if(document.querySelector("#HotelNameinput").value!=="" && document.querySelector(".startdate").value!=="" && document.querySelector(".enddate").value!=="" ){
+        hotesarr.push(Destination,startdate,enddate)
+    }
+    
+     
+        if(hotesarr.length===3){
+            localStorage.setItem("checkIN_out",JSON.stringify(hotesarr))
+            window.location.href="findhotels.html"
+        }
+        else{
+            alert("Please fille all detalis")
+        }
+        
+    
+   
+}
+
+
+// document.querySelector("#HotelsSubmit1").addEventListener("click",HotelsSubmit1)
+
+
+function HotelsSubmit1(){
+    let Destination=document.querySelector("#HotelNameinput1").value;
+    let startdate=document.querySelector(".startdate1").value;
+    let enddate=document.querySelector(".enddate1").value;
+
+    if(document.querySelector("#HotelNameinput1").value!=="" && document.querySelector(".startdate1").value!=="" && document.querySelector(".enddate1").value!=="" ){
+        hotesarr.push(Destination,startdate,enddate)
+    }
+    
+     
+        if(hotesarr.length===3){
+            localStorage.setItem("checkIN_out",JSON.stringify(hotesarr))
+            window.location.href="findhotels.html"
+        }
+        else{
+            alert("Please fille all detalis")
+   
+     } 
 }
