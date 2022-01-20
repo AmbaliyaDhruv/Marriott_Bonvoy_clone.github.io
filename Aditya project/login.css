@@ -1,0 +1,170 @@
+body {
+    font-family: proxima-nova, Helvetica, Arial, sans-serif;
+}
+
+/* popup styling */
+.bg-modal {
+    margin-top: 5px;
+    width: 100%;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    justify-content: center;
+    display: none;
+
+}
+
+.modal-content {
+    padding: 40px;
+    background-color: white;
+    width: 600px;
+    height: 900px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.close1 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: rotate(45);
+    font-size: 40px;
+}
+
+.close2 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: rotate(45);
+    font-size: 40px;
+}
+
+.bg-modal2 {
+    width: 70%;
+    height: 650px;
+    background-color: white;
+    position: absolute;
+    /* top: 0; */
+    justify-content: center;
+    display: none;
+    margin-left: 180px;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.modal-content2 {
+    background-color: white;
+    width: 80%;
+    height: 650px;
+    /* text-align: center; */
+    position: relative;
+
+}
+
+
+#navbar {
+    display: flex;
+    border: 1px solid rgb(27, 23, 23);
+    justify-content: right;
+    gap: 20px;
+    padding: 5px 50px;
+}
+
+form {
+    width: 50%;
+
+}
+
+input {
+    padding: 10px 180px;
+    text-align: left;
+}
+
+select {
+    margin-left: 5px;
+    padding: 10px 226px;
+}
+
+label {
+    margin-left: 5px;
+    float: left;
+    width: 150px;
+    margin-bottom: 10px;
+    /*or whatever you want the spacing to be*/
+}
+
+input {
+    margin-left: 5px;
+    float: left;
+    /* width: 150px; */
+    margin-bottom: 10px;
+    /*or whatever you want the spacing to be*/
+}
+
+#cond {
+    width: 530px;
+    display: inline-block;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+
+.signup-submit {
+    background-color: #444054;
+    color: white;
+    padding: 10px 234px;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+.login-submit {
+    margin-top: 10px;
+    padding: 13px 230px;
+    background-color: #444054;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+}
+
+h1 {
+    display: inline-block;
+}
+
+/* #profile-name{
+    display: none;
+} */
+img {
+    height: 350px;
+    width: 490px;
+}
+
+button {
+    padding: 15px 215px;
+    /* font-weight: bold; */
+    border: 1px solid black;
+}
+
+.last-p {
+    color: tomato;
+}
+
+.sign-letter {
+    font-size: 25px;
+}
+
+#fb-logo {
+    height: 30px;
+    width: 50px;
+}
+
+.welcome {
+    /* border: 1px solid blue; */
+    width: 500px;
+    font-size: 34px;
+    display: inline-block;
+    font-weight: bold;
+}
+#sign-logo{
+    height: 40px;
+    width: 250px;
+}
