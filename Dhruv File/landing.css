@@ -10,11 +10,11 @@ body{
 #navbar{
     /* border: 2px solid black; */
     position:fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 120px;
     border-top:5px solid black;
-    border-bottom: 2px solid gainsboro;
+    /* border-bottom: 2px solid gainsboro; */
     display: flex;
     background-color: white;
     /* margin-top:-22px; */
@@ -142,11 +142,46 @@ z-index: 20px;
     border: 1px solid gray;
 }
 
+#HotelNameinput1{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
 #Datesinput{
     width: 100%;
     height: 50px; 
     border-radius: 5px;
     border: 1px solid gray;
+}
+
+.startdate{
+    margin-left: 3px;
+    padding-right:5px;
+    border: none;
+    border-right: 2px solid black;
+    height: 94%;
+    width: 47%;
+}
+.enddate{
+    border: none;
+    height: 94%;
+    width: 47%;
+}
+
+.startdate1{
+    margin-left: 3px;
+    padding-right:5px;
+    border: none;
+    border-right: 2px solid black;
+    height: 94%;
+    width: 47%;
+}
+.enddate1{
+    border: none;
+    height: 94%;
+    width: 47%;
 }
 
 #HotelsSubmit{
@@ -161,6 +196,22 @@ z-index: 20px;
 }
 
 #HotelsSubmit:hover{
+    background-color: #53505f;
+    cursor: pointer;
+}
+
+#HotelsSubmit1{
+    width: 100%;
+    height: 50px; 
+    margin-top: 22px;
+    background-color:#444054;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+#HotelsSubmit1:hover{
     background-color: #53505f;
     cursor: pointer;
 }
@@ -494,5 +545,268 @@ z-index: 20px;
      cursor: pointer;
  }
 
+
+ .hover{
+     position: absolute;
+     width: 100%;
+    z-index: 1;
+    /* height:400px;
+     border: 2px solid blue; */
+     top:125px;
+     background-color: white;
+     position: fixed;
+     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+ }
+
+#find_reserve{
+       width: 77.6%;
+       /* border: 2px solid black; */
+       margin: auto;
+       margin-top: 45px ;
+       margin-bottom: 40px;
+}
+
+.find_reserve_inner{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.find_reserve_destination{
+    width:30%;
+}
+
+.find_reserve_dates{
+    width: 30%;
+}
+
+.find_reserve_findHotels{
+    width: 30%;
+}
+.find_reserve_class{
+    margin-top: 20px;
+}
+.find_reserve_class>a{
+  line-height: 30px;
+  text-decoration: none;
+  color: rgb(226, 148, 2);
+}
+
+.find_reserve_class>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.find_reserve_vacation{
+   font-size: 13px;
+}
+
+.find_reserve_vacation>a{
+  text-decoration:none;
+  font-weight: bolder;
+  font-size: 10px;
+  color:rgb(226, 148, 2) ;
+}
+
+.find_reserve_vacation>a:hover{
+    text-decoration: underline;
+}
+
+
+#special_offers{
+    width: 77.6%;
+   /* border: 2px solid black;
+   height: 350px; */
+   margin: auto;
+   margin-top: 45px ;
+   margin-bottom: 40px;
+   display: flex;
+   gap: 20px;
+}
+
+#special_offers>div{
+    flex: 1;
+   
+}
+
+.special_offers_first>div{
+  border-bottom: 1px solid gainsboro;
+  padding:10px 0px;
+}
+
+.special_offers_first>div:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+
+.special_offers_second>div{
+    border-bottom: 1px solid gainsboro;
+    padding:10px 0px;
+  }
+  
+  .special_offers_second>div:hover{
+      border-bottom: 2px solid black;
+      cursor: pointer;
+  }
+
+  .special_offers_third{
+      height: 200px;
+  }
+
+  .special_offers_foruth_1st{
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .special_offers_foruth_2nd{
+      /* border: 2px solid black; */
+      width: 140px;
+      padding:10px;
+      margin-top: 20px;
+      font-weight: 600;
+      background-color:#444054;
+      color: white;
+  }
+
+  .special_offers_foruth_2nd:hover{
+    background-color: #53505f;
+    cursor: pointer;
+  }
+
+  #vacation{
+    width: 77.6%;
+    /* border: 2px solid black;
+    height: 350px; */
+    margin: auto;
+    margin-top: 45px ;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+  }
+
+  #vacation>div{
+    flex: 1;
+   
+}
+
+.vacation_first>div{
+  border-bottom: 1px solid gainsboro;
+  padding:10px 0px;
+}
+
+.vacation_first>div:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+
+.vacation_second>div{
+    border-bottom: 1px solid gainsboro;
+    padding:10px 0px;
+  }
+  
+  .vacation_second>div:hover{
+      border-bottom: 2px solid black;
+      cursor: pointer;
+  }
+
+  .vacation_third{
+      height: 200px;
+  }
+
+  .vacation_fourth_1st{
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .vacation_fourth_2st{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+  .vacation_fourth_3rd{
+      /* border: 2px solid black; */
+      width: 160px;
+      padding:10px;
+      margin-top: 20px;
+      font-weight: 600;
+      background-color:#444054;
+      color: white;
+  }
+
+  .vacation_fourth_3rd:hover{
+    background-color: #53505f;
+    cursor: pointer;
+  }
+
  
- 
+  #about_marriott{
+    width: 77.6%;
+   /* border: 2px solid black;
+   height: 350px; */
+   margin: auto;
+   margin-top: 45px ;
+   margin-bottom: 40px;
+   display: flex;
+   gap: 20px;
+}
+
+#about_marriott>div{
+    flex: 1;
+   
+}
+
+.about_marriott_first>div{
+  border-bottom: 1px solid gainsboro;
+  padding:10px 0px;
+}
+
+.about_marriott_first>div:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+
+.about_marriott_second>div{
+    border-bottom: 1px solid gainsboro;
+    padding:10px 0px;
+  }
+  
+  .about_marriott_second>div:hover{
+      border-bottom: 2px solid black;
+      cursor: pointer;
+  }
+
+  .about_marriott_third{
+      height: 200px;
+  }
+
+  .about_marriott_foruth_1st{
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .about_marriott_foruth_2nd{
+      /* border: 2px solid black; */
+      width: 80px;
+      padding:10px;
+      margin-top: 20px;
+      font-weight: 600;
+      background-color:#444054;
+      color: white;
+  }
+
+  .about_marriott_foruth_2nd:hover{
+    background-color: #53505f;
+    cursor: pointer;
+  }
+
+
+  #ourbrands{
+    width: 77.6%;
+    /* border: 2px solid black; */
+    margin: auto;
+    margin-top: 45px ;
+    margin-bottom: 40px;
+}
