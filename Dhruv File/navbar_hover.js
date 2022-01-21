@@ -400,14 +400,58 @@ async function Register(event){
         })
 
         let data=await response.json();
-
+        document.querySelector("#name1").value=null
+        document.querySelector("#email").value=null
+        document.querySelector("#user").value=null
+        document.querySelector("#pass").value=null
+        document.querySelector("#num").value=null
+        document.querySelector("#name2").value=null
+        alert("Registration Successful");
         console.log(data);
     }
     catch(er){
         console.log("Register side",er)
+        alert("Registration failed,user already exists");
+        document.querySelector("#name1").value=null
+        document.querySelector("#email").value=null
+        document.querySelector("#user").value=null
+        document.querySelector("#pass").value=null
+        document.querySelector("#num").value=null
+        document.querySelector("#name2").value=null
     }
 }
 
+async function Onscreenlogin(){
+    let loginData={
+        password:document.querySelector("#passwordinput").value,
+        username:document.querySelector("#Emailinput").value,
+    }
+    loginData=JSON.stringify(loginData);
+    
+
+    try{
+        let url='https://masai-api-mocker.herokuapp.com/auth/login'
+        let response=await fetch(url,{
+            method:"POST",
+            body:loginData,
+            headers:{
+                "Content-Type":"application/json",
+            }
+        });
+        let data = await response.json();
+        console.log(data);
+        let username=document.querySelector("#Emailinput").value
+        getUser(username,data.token)
+    }
+
+    catch(er){
+        console.log("login side",er)
+        alert("Please fill right details")
+        document.querySelector("#passwordinput").value=null
+        document.querySelector("#Emailinput").value=null
+    }
+    
+}
 
 async function Login(event){
     event.preventDefault();
@@ -416,7 +460,7 @@ async function Login(event){
         username:document.querySelector("#username-login").value,
     }
     loginData=JSON.stringify(loginData);
-    
+   
 
     try{
         let url='https://masai-api-mocker.herokuapp.com/auth/login'
@@ -436,6 +480,8 @@ async function Login(event){
     catch(er){
         console.log("login side",er)
         alert("Please fill right details")
+        document.querySelector("#password-login").value=null;
+        document.querySelector("#username-login").value=null;
     }
 }
 
@@ -468,16 +514,20 @@ async function getUser(username,token){
 
 let a= document.querySelector("#siginName")
 let b=document.querySelector("#logOut")
+let c=document.querySelector("#dhruv")
 function call(userName){
 
    b.textContent="Logout"
    a.textContent=userName;
+   c.innerHTML=` <div class="dhruv-msg">
+   Hello ${userName} Welcome MARRIOTT BONVOY Club
+</div>`
 }
 
 
 function logOut(){
-    b.textContent="";
-    a.textContent="sigin";
+ 
+    window.location.href="index.html"
 }
 
 

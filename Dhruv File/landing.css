@@ -1116,25 +1116,23 @@ select {
     margin-top: 20px;
     display:none;
     font-size: 13px;
-    line-height:40px;
-    /* position: absolute;
-    width: 75%; */
+    line-height:30px;
+  
 }
 
 .footer_pop2{
     margin-top: 20px;
     display:none;
     font-size: 13px;
-    line-height:40px;
-    /* position: absolute;
-    width: 75%; */
+    line-height:30px;
+   
 }
 
 .footer_pop3{
     margin-top: 20px;
     display:none;
     font-size: 13px;
-    line-height:40px;
+    line-height:30px;
    
 }
 
@@ -1150,4 +1148,21 @@ select {
     line-height: 25px;
     font-weight: 500;
     margin-bottom: 60px;
+}
+
+
+
+.dhruv-msg{
+    color: white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+
+}
+
+.signup-submit:hover{
+    cursor: pointer;
+    background-color:#53505f;
 }
