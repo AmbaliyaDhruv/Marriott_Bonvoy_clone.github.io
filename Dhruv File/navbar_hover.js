@@ -479,3 +479,41 @@ function logOut(){
     b.textContent="";
     a.textContent="sigin";
 }
+
+
+
+function footer_pop1(){
+    if(flage){
+        document.querySelector(".footer_pop1").style.display="block";
+        flage=false;
+    }
+    else{
+        document.querySelector(".footer_pop1").style.display="none";
+        flage=true; 
+    }
+ 
+}
+
+function footer_pop2(){
+    if(flage){
+        document.querySelector(".footer_pop2").style.display="block";
+        flage=false;
+    }
+    else{
+        document.querySelector(".footer_pop2").style.display="none";
+        flage=true; 
+    }
+ 
+}
+
+function footer_pop3(){
+    if(flage){
+        document.querySelector(".footer_pop3").style.display="block";
+        flage=false;
+    }
+    else{
+        document.querySelector(".footer_pop3").style.display="none";
+        flage=true; 
+    }
+ 
+}
