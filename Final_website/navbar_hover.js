@@ -205,7 +205,7 @@ function HotelsSubmit(){
      
         if(hotesarr.length===3){
             localStorage.setItem("checkIN_out",JSON.stringify(hotesarr))
-            window.location.href="findhotels.html"
+            window.location.href="/html/FindHotels Page.html"
         }
         else{
             alert("Please fille all detalis")
@@ -231,7 +231,7 @@ function HotelsSubmit1(){
      
         if(hotesarr.length===3){
             localStorage.setItem("checkIN_out",JSON.stringify(hotesarr))
-            window.location.href="findhotels.html"
+            window.location.href="/html/FindHotels Page.html"
         }
         else{
             alert("Please fille all detalis")

@@ -94,11 +94,12 @@ body{
 .explore{
 position: absolute;
 margin-top: -360px;
-margin-left: 170px;
+/* margin-left: 170px; */
 color: white;
 font-size: 50px;
 font-weight:bolder;
 z-index: 20px;
+left: 30%;
 
 }
 

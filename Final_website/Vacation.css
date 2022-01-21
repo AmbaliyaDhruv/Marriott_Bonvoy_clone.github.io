@@ -232,6 +232,7 @@ a:hover {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3%;
 }
 
 .travel_stories_logo {
@@ -244,6 +245,7 @@ a:hover {
     height: 100%;
     width: 100%;
     margin-left: 100px;
+   
 }
 
 .travel_stories_via>button {
