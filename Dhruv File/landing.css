@@ -1091,20 +1091,21 @@ select {
 }
 
 #footer_box{
-    border: 2px solid black;
+    border: 2px solid transparent;
     background-color: white;
+    box-shadow: rgba(33, 35, 38, 0.329) 0px 10px 10px -10px;
 }
 
 #footer_end{
     margin-top: 20px;
-    border: 2px solid black;
+    border: 2px solid transparent;
     background-color: white;
     
 }
 
 .end_box{
    
-    border: 2px solid black;
+    border: 2px solid transparent;
     width: 77.5%;
     margin: auto;
     margin-top: 10px;
@@ -1114,6 +1115,8 @@ select {
 .footer_pop1{
     margin-top: 20px;
     display:none;
+    font-size: 13px;
+    line-height:40px;
     /* position: absolute;
     width: 75%; */
 }
@@ -1121,6 +1124,8 @@ select {
 .footer_pop2{
     margin-top: 20px;
     display:none;
+    font-size: 13px;
+    line-height:40px;
     /* position: absolute;
     width: 75%; */
 }
@@ -1128,16 +1133,21 @@ select {
 .footer_pop3{
     margin-top: 20px;
     display:none;
-    /* position: absolute;
-    width: 75%; */
+    font-size: 13px;
+    line-height:40px;
+   
 }
 
 .ftbox1{
     font-weight: bold;
+    font-size: 14px;
+    height: 25px;
+    cursor: pointer;
 }
 
 .endabout{
     font-size: 13px;
     line-height: 25px;
     font-weight: 500;
+    margin-bottom: 60px;
 }
