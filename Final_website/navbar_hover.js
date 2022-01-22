@@ -162,7 +162,7 @@ function clickOn3(){
     if(flage){
         box.innerHTML=`<div class="hover">
         <div id="ourbrands">
-            <img src="Ourbrand.png" width="100%" height="100%" alt="">
+            <img src="/index_image/Ourbrand.png" width="100%" height="100%" alt="">
         </div>
     </div>`
         flage=false;
