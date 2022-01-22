@@ -8,6 +8,19 @@ body{
     
 }
 
+#waiting{
+    /* border: 2px solid gold; */
+    width: 80%;
+    height: 1000px;
+    top: 0%;
+    left: 10%;
+    z-index: 5;
+    position: absolute;
+    position:fixed;
+    display: none;
+    
+}
+
 #navbar{
     /* border: 2px solid black; */
     position:fixed;
@@ -99,7 +112,7 @@ color: white;
 font-size: 50px;
 font-weight:bolder;
 z-index: 20px;
-left: 30%;
+left: 11.4%;
 
 }
 

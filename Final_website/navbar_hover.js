@@ -428,6 +428,7 @@ async function Onscreenlogin(){
     }
     loginData=JSON.stringify(loginData);
     
+    document.querySelector("#waiting").style.display="block";
 
     try{
         let url='https://masai-api-mocker.herokuapp.com/auth/login'
@@ -441,11 +442,13 @@ async function Onscreenlogin(){
         let data = await response.json();
         console.log(data);
         let username=document.querySelector("#Emailinput").value
+        document.querySelector("#waiting").style.display="none";
         getUser(username,data.token)
     }
 
     catch(er){
         console.log("login side",er)
+        document.querySelector("#waiting").style.display="none";
         alert("Please fill right details")
         document.querySelector("#passwordinput").value=null
         document.querySelector("#Emailinput").value=null
@@ -460,7 +463,7 @@ async function Login(event){
         username:document.querySelector("#username-login").value,
     }
     loginData=JSON.stringify(loginData);
-   
+    document.querySelector("#waiting").style.display="block";
 
     try{
         let url='https://masai-api-mocker.herokuapp.com/auth/login'
@@ -473,12 +476,14 @@ async function Login(event){
         });
         let data = await response.json();
         console.log(data);
+        document.querySelector("#waiting").style.display="none";
         let username=document.querySelector("#username-login").value
         getUser(username,data.token)
     }
 
     catch(er){
         console.log("login side",er)
+        document.querySelector("#waiting").style.display="none";
         alert("Please fill right details")
         document.querySelector("#password-login").value=null;
         document.querySelector("#username-login").value=null;
@@ -514,6 +519,7 @@ async function getUser(username,token){
 
 let a= document.querySelector("#siginName")
 let b=document.querySelector("#logOut")
+
 let c=document.querySelector("#dhruv")
 function call(userName){
 
@@ -524,10 +530,22 @@ function call(userName){
 </div>`
 }
 
-
+let localStoragearr=JSON.parse(localStorage.getItem("UserData"))
 function logOut(){
- 
+    
     window.location.href="index.html"
+    localStoragearr=null
+    localStorage.setItem("UserData",JSON.stringify(localStoragearr));
+}
+
+
+always();
+function always(){
+   console.log("check",localStoragearr[0]);
+
+   if(localStoragearr!==null){
+          call(localStoragearr[0]);
+   }
 }
 
 
