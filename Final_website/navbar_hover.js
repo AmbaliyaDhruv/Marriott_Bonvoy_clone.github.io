@@ -520,7 +520,7 @@ function call(userName){
    b.textContent="Logout"
    a.textContent=userName;
    c.innerHTML=` <div class="dhruv-msg">
-   Hello ${userName} Welcome MARRIOTT BONVOY Club
+   Hello,${userName.charAt(0).toUpperCase()+userName.slice(1)} Welcome MARRIOTT BONVOY Club
 </div>`
 }
 
