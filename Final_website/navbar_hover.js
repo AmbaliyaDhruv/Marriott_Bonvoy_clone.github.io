@@ -524,9 +524,17 @@ let c=document.querySelector("#dhruv")
 function call(userName){
 
    b.textContent="Logout"
-   a.textContent=userName;
+   a.textContent=userName.charAt(0).toUpperCase()+userName.slice(1);
    c.innerHTML=` <div class="dhruv-msg">
+<<<<<<< Updated upstream
    Hello,${userName.charAt(0).toUpperCase()+userName.slice(1)} Welcome MARRIOTT BONVOY Club
+=======
+<<<<<<< HEAD
+   Hello ${userName.charAt(0).toUpperCase()+userName.slice(1)} Welcome MARRIOTT BONVOY Club
+=======
+   Hello,${userName.charAt(0).toUpperCase()+userName.slice(1)} Welcome MARRIOTT BONVOY Club
+>>>>>>> 01fd74143ae3fa816dbb07abb984db4a801410ef
+>>>>>>> Stashed changes
 </div>`
 }
 
