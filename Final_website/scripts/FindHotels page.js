@@ -5,23 +5,6 @@ dest=dest.charAt(0).toUpperCase() + dest.slice(1)
  
  let product= [
     {
-      "place_name": `${dest}`,
-      "hotele_address": `1-3-1024 Lower Tank Bund Road ${dest}, India 500 080`,
-      "price": "4018",
-      "hotel_name": "Court Yard Marriot",
-      "main_image": "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-exterior-0021-hor-feat.jpg?resize=375:150&output-quality=70",
-      "brand_name": "Marriot",
-      "filter_name": "pool",
-      "room": [
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0022-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
-        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px"
-      ],
-      "id": 1
-    },
-    {
       "place_name": ` ${dest}`,
       "hotele_address": `462, Senapati Bapat Marg, Lower Parel ${dest}, India 400013`,
       "price": "7840",
@@ -290,7 +273,26 @@ dest=dest.charAt(0).toUpperCase() + dest.slice(1)
         "https://cache.marriott.com/marriottassets/marriott/MAAVW/maavw-deluxe-room-1484-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px"
       ],
       "id": 16
-    }
+    },
+    {
+      "place_name": `${dest}`,
+      "hotele_address": `1-3-1024 Lower Tank Bund Road ${dest}, India 500 080`,
+      "price": "4018",
+      "contact": "98518445615",
+      "hotel_name": "Court Yard Marriot",
+      "main_image": "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-exterior-0021-hor-feat.jpg?resize=375:150&output-quality=70",
+      "brand_name": "Marriot",
+      "filter_name": "pool",
+      "room": [
+        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0022-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px",
+        "https://cache.marriott.com/marriottassets/marriott/HYDCY/hydcy-guestroom-0024-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=512px:342px"
+      ],
+      "id": 1
+    },
+
   ]
   
 
