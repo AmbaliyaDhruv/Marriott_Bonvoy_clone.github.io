@@ -15,8 +15,9 @@ body{
 
 /* ----------------- style for big dive of all------------------- */
 
-#main{
+#main p{
     /* border: 2px solid red; */
+    color: rgb(235, 98, 34);
 }
 /* ----------------------style for second big div---------------- */
 #main>div{
